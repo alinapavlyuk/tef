@@ -269,6 +269,28 @@ nav ul li a:hover {
 .main-menu a:hover {
     color: var(--grey);
 }
+
+.major-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.major-name {
+    font-family: "Proxima Nova Semibold", sans-serif;
+    color: var(--grey);
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.major-description {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: var(--grey);
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+
 
 
