@@ -87,4 +87,19 @@ function showNavigationBar() {
     })
 }
 
-showNavigationBar();playAccordion();
+function playAccordion() {
+    let currentItemNum = 1;
+    let nextItemNum = 2;
+
+    setInterval(function () {
+        let activeItem = document.querySelector(`#item-${currentItemNum}`);
+        activeItem.classList.remove("active");
+        let nextItem = document.querySelector(`#item-${nextItemNum}`);
+        nextItem.classList.add("active");
+        currentItemNum = currentItemNum % 4 + 1;
+        nextItemNum = nextItemNum % 4 + 1;
+    }, 5000);
+}
+
+showNavigationBar();
+playAccordion();
