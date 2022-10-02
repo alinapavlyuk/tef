@@ -20,6 +20,8 @@ header {
     padding-right: 50px;
 }
 
+main {
+    margin: 100px 30px;
 }
 
 a {
@@ -42,6 +44,8 @@ h1 {
     margin-bottom: 35px;
 }
 
+h5 {
+    font-size: 18px;
 }
 
 .logo {
@@ -224,6 +228,46 @@ nav ul li a:hover {
 
 .item-4 {
     background-image: url('../images/accordion-4.png');
+}
+
+.main-menu-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    padding: 0 5px;
+    top: 15px;
+    left: 20px;
+    color: var(--grey);
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    border: 2px solid var(--green);
+    min-height: 150px;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu a {
+    text-decoration: underline;
+    color: var(--green);
+    transition: 0.5s all ease-out;
+}
+
+.main-menu a:hover {
+    color: var(--grey);
 }
 }
 
