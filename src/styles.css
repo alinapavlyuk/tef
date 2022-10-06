@@ -25,6 +25,14 @@ main {
     margin: 100px 30px;
 }
 
+footer {
+    color: var(--grey);
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(90deg , rgba(185, 232, 12,0.6), rgba(49, 172, 27,0.6));
+    padding: 30px 50px 10px 50px;
+    font-size: 17px;
+}
+
 a {
     text-decoration: none;
 }
@@ -370,6 +378,28 @@ nav ul li a:hover {
     margin-top: 100px;
     background: var(--gradient);
 }
+
+.contacts img {
+    width: 13px;
+}
+
+.facebook-link, .telegram-link {
+    padding: 7px;
+}
+
+.footer-links a {
+    color: var(--grey);
+    text-decoration: underline;
+}
+
+.footer-kpi-logos img{
+    width: 100%;
+}
+
+.footer-kpi-logos .row {
+    align-items: center;
+}
+
 
 
 
