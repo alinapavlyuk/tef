@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css">
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
@@ -240,7 +241,56 @@
             </div>
             <hr class="hr-after-companies">
             <div class="row" style="margin-top: 100px;">
-                <h2>Новини</h2>
+                <h2 class="mb-3" style="padding-left: 60px">Новини</h2>
+                <section id="card-carousel" class="splide" aria-label="Beautiful Images">
+                    <div class="splide__track ms-5 me-5">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <a href="#">
+                                        <img src="images/carousel-1.png" alt="">
+                                    </a>
+                                    <div>
+                                        <a href="#">
+                                            Студенство КПІ долучилося до благодійної акції “Бакалавр 4.5.0”
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <a href="#">
+                                        <img src="images/carousel-2.png" alt="">
+                                    </a>
+                                    <div>
+                                        <a href="#">
+                                            Зміна спеціальності: з ФІВТ на фізмат. Як вчаться на математиків у КПІ?
+                                            Артем Кравець, 4-й курс ФМФ
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <a href="#">
+                                        <img src="images/carousel-3.png" alt="">
+                                    </a>
+                                        <div>
+                                            <a href="">Vulputate morbi non, dui vehicula convallis fringilla a.
+                                                Non gravida malesuada nisl pellentesque volutpat quis scelerisque.
+                                                Odio amet ut elementum urna, molestie egestas nullam nisl, velit.</a>
+                                        </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <button class="green-button">До інших новин</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-carousel-progress mt-5 ms-5 me-5">
+                        <div class="my-carousel-progress-bar"></div>
+                    </div>
+                </section>
             </div>
         </main>
         <footer>
@@ -328,6 +378,8 @@
             </div>
         </footer>
     </div>
+    <script src="splide-4.1.3/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="src/script.js"></script>
 </body>
 </html>
