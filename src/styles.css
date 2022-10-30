@@ -186,6 +186,12 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: space-around;
+}
+
+.language-switcher .dropdown-content {
+    min-width: 50px;
+    left: -15px;
 }
 
 .language-switcher a {
@@ -390,6 +396,12 @@ nav ul li a:hover {
 .footer-links a {
     color: var(--grey);
     text-decoration: underline;
+    transition: 0.5s all ease-out;
+}
+
+.footer-links a:hover {
+    font-weight: bolder;
+    color: black;
 }
 
 .footer-kpi-logos img{

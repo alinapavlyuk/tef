@@ -66,7 +66,7 @@ function showNavigationBar() {
     let navigationList = document.querySelector("#navigation-list");
     navigationListItems.forEach(function (item, index) {
         navigationList.innerHTML += `
-        <li class="navigation-list-item" id="nav-item-${index}">
+        <li id="nav-item-${index}">
            <a href = ${item.link} id="link-${index}">${item.name}</a>
            <div class="space-before-dropdown"></div>
         </li>
