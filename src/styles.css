@@ -191,11 +191,16 @@ nav ul li a:hover {
 
 .language-switcher .dropdown-content {
     min-width: 50px;
-    left: -15px;
+    left: -17px;
 }
 
 .language-switcher a {
     color: var(--grey);
+}
+
+.language-switcher a:hover {
+    color: black;
+    font-weight: bolder;
 }
 
 .faculty-heading {
