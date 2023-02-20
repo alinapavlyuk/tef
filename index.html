@@ -11,37 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css">
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/scss/styles.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <header>
-            <div class="row main-nav">
+    <div class="container-fluid h-100" style="padding: 0">
+        <header class="mt-2 h-100">
+            <div class="container-fluid vh-100">
+            <div class="row main-nav mx-4">
                 <div class="col-3">
                     <img src="images/logo.svg" alt="logo" class="logo">
                 </div>
-                <div class="col-6">
-                    <nav>
-                        <ul id="main-navigation-list"></ul>
-                    </nav>
+                <div class="col-6 d-flex align-items-center">
+                    <div class="container">
+                        <nav>
+                            <ul id="main-navigation-list"></ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <div class="row">
-                        <div class="col-10">
-                            <div class="search main-nav-search">
-                            <form action="#">
-                                <input type="text" placeholder="Пошук">
-                                <button type="submit"></button>
-                            </form>
+                <div class="col-3 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="search main-nav-search">
+                                <form action="#">
+                                    <input type="text" placeholder="Пошук">
+                                    <button type="submit"></button>
+                                </form>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="language-switcher">
-                                <div class="dropdown">
-                                    <a href="#">UA</a>
-                                    <div class="space-before-dropdown"></div>
-                                    <div class="dropdown-content">
-                                        <a href="#">EN</a>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <div class="language-switcher">
+                                    <div class="dropdown">
+                                        <a href="#">UA</a>
+                                        <div class="dropdown-content">
+                                            <a href="#">EN</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +54,7 @@
                 </div>
             </div>
             <div class="row side-nav">
-                <nav class="navbar">
+                <nav class="navbar fixed-top px-3">
                     <img src="images/logo.svg" alt="logo" class="logo">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -74,35 +78,42 @@
                     </div>
                 </nav>
             </div>
-            <div class="row">
-                <div class="col">
+            <div class="row flex-column-reverse flex-lg-row mx-sm-2 mx-lg-4">
+                <div class="col col-lg-6">
                     <div class="faculty-heading">
-                        <h1>
-                            Кaфедра теплової
-                            та альтернативної
-                            енергетики
-                        </h1>
-                        <span>
-                    Наша мета - підготовка високопрофесійних працівників у
-                    галузі промислової, муніціпальної та глобальної енергетики
-                </span>
-                        <button class="green-button">
-                            Дізнатися більше
-                        </button>
+                        <div class="row flex-column flex-grow-1 flex-md-row mt-md-5 h-100">
+                            <div class="col mb-lg-5 mb-md-0 d-flex align-items-center">
+                                <h1 class="align-middle">
+                                    Кaфедра теплової
+                                    та альтернативної
+                                    енергетики
+                                </h1>
+                            </div>
+                            <div class="col d-flex flex-column justify-content-around">
+                                <p class="mb-lg-5">
+                                    Наша мета - підготовка високопрофесійних працівників у
+                                    галузі промислової, муніціпальної та глобальної енергетики
+                                </p>
+                                <button class="green-button mt-3">
+                                    Дізнатися більше
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-lg-6">
                     <div class="photo-accordion">
-                        <div class="item item-1 active" id="item-1"></div>
-                        <div class="item item-2" id="item-2"></div>
-                        <div class="item item-3" id="item-3"></div>
-                        <div class="item item-4" id="item-4"></div>
+                        <div class="photo-accordion-item accordion-item-1 accordion-item-active" id="accordion-item-1"></div>
+                        <div class="photo-accordion-item accordion-item-2" id="accordion-item-2"></div>
+                        <div class="photo-accordion-item accordion-item-3" id="accordion-item-3"></div>
+                        <div class="photo-accordion-item accordion-item-4" id="accordion-item-4"></div>
                     </div>
                 </div>
             </div>
+            </div>
         </header>
-        <main>
-            <div class="row">
+        <main class="mt-lg mb-lg mx-4">
+            <div class="row main-menu-wrapper">
                 <div class="col-4">
                     <span class="main-menu-heading">Про кафедру</span>
                     <div class="main-menu">
@@ -149,11 +160,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row" style="margin-top: 100px;">
+            <div class="row mt-lg">
                 <div class="col-5">
                     <img src="images/144.svg" style="max-width: 100%;" alt="144">
                 </div>
-                <div class="col-7 major-text">
+                <div class="col-7 d-flex flex-column justify-content-between">
                     <h2 class="major-name">Спеціальність “Теплоенергетика”</h2>
                     <p class="major-description">Успішна діяльність людини сьогодні і в
                         майбутньому в значній мірі залежить від комфортних умов енергозабезпечення.
@@ -164,7 +175,7 @@
                         а також широке застосування маловитратних технологій і енергозбереження.</p>
                 </div>
             </div>
-             <div class="row justify-content-space-between" style="margin-top: 100px;">
+             <div class="row justify-content-space-between mt-lg">
                  <h2 class="mb-4">
                      Наші переваги
                  </h2>
@@ -234,10 +245,10 @@
                      </div>
                  </div>
              </div>
-            <div class="row" style="margin-top: 100px;">
+            <div class="row mt-lg">
                 <h2 class="mb-5">Наші студенти працюють у таких компаніях</h2>
                 <div class="companies">
-                    <div class="row gy-2 row-cols-xs-4 row-cols-sm-4 row-cols-md-5 align-items-center">
+                    <div class="row gy-2 row-cols-sm-4 row-cols-md-5 align-items-center">
                         <div>
                             <img src="images/DTEK-logo.png" alt="">
                         </div>
@@ -271,57 +282,59 @@
                 </div>
             </div>
             <hr class="hr-after-companies">
-            <div class="row" style="margin-top: 100px;">
-                <h2 class="mb-3" style="padding-left: 60px">Новини</h2>
-                <section id="card-carousel" class="splide" aria-label="Beautiful Images">
-                    <div class="splide__track ms-5 me-5">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="splide__slide__container">
-                                    <a href="#">
-                                        <img src="images/carousel-1.png" alt="">
-                                    </a>
-                                    <div>
+            <div class="row mt-lg">
+                <div class="container-fluid">
+                    <h2 class="mb-3 ms-5">Новини</h2>
+                    <section id="card-carousel" class="splide" aria-label="Beautiful Images">
+                        <div class="splide__track ms-5 me-5">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
                                         <a href="#">
-                                            Студенство КПІ долучилося до благодійної акції “Бакалавр 4.5.0”
+                                            <img src="images/carousel-1.png" alt="">
                                         </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="splide__slide__container">
-                                    <a href="#">
-                                        <img src="images/carousel-2.png" alt="">
-                                    </a>
-                                    <div>
-                                        <a href="#">
-                                            Зміна спеціальності: з ФІВТ на фізмат. Як вчаться на математиків у КПІ?
-                                            Артем Кравець, 4-й курс ФМФ
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="splide__slide__container">
-                                    <a href="#">
-                                        <img src="images/carousel-3.png" alt="">
-                                    </a>
                                         <div>
-                                            <a href="">Vulputate morbi non, dui vehicula convallis fringilla a.
-                                                Non gravida malesuada nisl pellentesque volutpat quis scelerisque.
-                                                Odio amet ut elementum urna, molestie egestas nullam nisl, velit.</a>
+                                            <a href="#">
+                                                Студенство КПІ долучилося до благодійної акції “Бакалавр 4.5.0”
+                                            </a>
                                         </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <button class="green-button">До інших новин</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="my-carousel-progress mt-5 ms-5 me-5">
-                        <div class="my-carousel-progress-bar"></div>
-                    </div>
-                </section>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <a href="#">
+                                            <img src="images/carousel-2.png" alt="">
+                                        </a>
+                                        <div>
+                                            <a href="#">
+                                                Зміна спеціальності: з ФІВТ на фізмат. Як вчаться на математиків у КПІ?
+                                                Артем Кравець, 4-й курс ФМФ
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <a href="#">
+                                            <img src="images/carousel-3.png" alt="">
+                                        </a>
+                                            <div>
+                                                <a href="">Vulputate morbi non, dui vehicula convallis fringilla a.
+                                                    Non gravida malesuada nisl pellentesque volutpat quis scelerisque.
+                                                    Odio amet ut elementum urna, molestie egestas nullam nisl, velit.</a>
+                                            </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <button class="green-button">До інших новин</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="carousel-progress mt-5 mx-5">
+                            <div class="carousel-progress-bar"></div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </main>
         <footer>
@@ -329,7 +342,7 @@
                 <div class="col-4 contacts">
                     <div class="row align-items-center mb-2">
                         <div class="col-1">
-                            <img src="images/phone-icon.svg" alt="" style="width: 13px">
+                            <img src="images/phone-icon.svg" alt="">
                         </div>
                         <div class="col-11">
                             <span>+38 (044) 204 80 96</span>
@@ -360,12 +373,12 @@
                     <div class="row">
                         <div class="col-auto facebook-link">
                             <a href="">
-                                <img src="images/facebook-icon.svg" style="width: 30px" alt="">
+                                <img src="images/facebook-icon.svg" alt="">
                             </a>
                         </div>
                         <div class="col-auto telegram-link">
                             <a href="">
-                                <img src="images/telegram-icon.svg" style="width: 35px" alt="">
+                                <img src="images/telegram-icon.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -379,22 +392,26 @@
                     <a href="#">Link</a>
                 </div>
                 <div class="col-4 footer-kpi-logos">
-                    <div class="row mt-3">
+                    <div class="row mt-3 align-items-center">
                         <div class="col-3">
                             <img src="images/univercity-logo-big.svg" alt="">
                         </div>
                         <div class="col-9">
-                            Навчально-науковий інститут атомної
-                            та теплової енергетики
+                            <span>
+                                Навчально-науковий інститут атомної
+                                та теплової енергетики
+                            </span>
                         </div>
                     </div>
-                    <div class="row mt-3">
+                    <div class="row mt-3 align-items-center">
                         <div class="col-3">
                             <img src="images/univercity-logo-big.svg" alt="">
                         </div>
                         <div class="col-9">
-                            Національний технічний університет України
-                            "Київський політехнічний інститут імені Ігоря Сікорського"
+                            <span>
+                                Національний технічний університет України
+                                "Київський політехнічний інститут імені Ігоря Сікорського"
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -409,8 +426,8 @@
             </div>
         </footer>
     </div>
-    <script src="splide-4.1.3/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="splide-4.1.3/dist/js/splide.min.js"></script>
     <script src="src/script.js" type="module"></script>
 </body>
 </html>

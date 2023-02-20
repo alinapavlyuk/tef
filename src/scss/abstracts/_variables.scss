@@ -1,0 +1,19 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 480px,
+        md: 768px,
+        lg: 992px
+);
+
+$logo-size-main: 8vh;
+$logo-size-mobile: 5vh;
+$main-nav-font-size-main: 15px;
+$main-nav-font-size-big: 17px;
+$text-size-normal: 17px;
+$text-size-bigger: 20px;
+$text-size-smaller: 16px;
+$space-before-dropdown: 10px;
+$green: #2EAA1A;
+$light-green: #CCEC06;
+$grey: #2D3D2F;
+$gradient: linear-gradient(90deg , $light-green, $green);
