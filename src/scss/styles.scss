@@ -99,12 +99,18 @@ footer {
   }
 }
 
-.mt-lg {
+.main-mt, .mt-resp {
   margin-top: 15vh;
 }
 
-.mb-lg {
-  margin-bottom: 15vh;
+@media screen and (max-width: 480px), (orientation: portrait) {
+  .main-mt {
+    margin-top: 1.5vh;
+  }
+
+  .mt-resp {
+    margin-top: 7vh;
+  }
 }
 /*common usage end*/
 
@@ -424,7 +430,7 @@ footer {
 
 /*main*/
 /*main menu start*/
-.main-menu-wrapper {
+.main-menu {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
@@ -439,7 +445,7 @@ footer {
   left: 20px;
 }
 
-.main-menu {
+.main-menu-table {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,6 +465,27 @@ footer {
   }
   a:hover {
     color: $grey;
+  }
+}
+
+.main-menu-mobile-header {
+  display:none;
+}
+
+@media screen and (max-width: 480px) {
+  .main-menu-table {
+    min-height: 60px;
+    border-radius: 5px;
+  }
+  .main-menu ul li:not(.main-menu-mobile-header), .main-menu-heading {
+    display: none;
+  }
+  .main-menu-mobile-header {
+    display: list-item;
+  }
+  .main-menu-mobile-header, a {
+    text-decoration: none !important;
+    -webkit-text-stroke: 1px $green;
   }
 }
 /*main menu end*/
