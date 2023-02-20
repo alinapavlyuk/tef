@@ -9458,7 +9458,7 @@ footer {
   .main-menu-mobile-header {
     display: list-item;
   }
-  .main-menu-mobile-header, a {
+  .main-menu-mobile-header a {
     text-decoration: none !important;
     -webkit-text-stroke: 1px #2EAA1A;
   }
