@@ -95,7 +95,7 @@
                                     галузі промислової, муніціпальної та глобальної енергетики
                                 </p>
                                 <button class="green-button mt-3">
-                                    Дізнатися більше
+                                    <span>Дізнатися більше</span>
                                 </button>
                             </div>
                         </div>
@@ -261,7 +261,7 @@
             <div class="row mt-resp">
                 <h2 class="mb-5">Наші студенти працюють у таких компаніях</h2>
                 <div class="companies">
-                    <div class="row gy-2 row-cols-sm-4 row-cols-md-5 align-items-center">
+                    <div class="row gy-2 row-cols-4 row-cols-md-5 align-items-center">
                         <div>
                             <img src="images/DTEK-logo.png" alt="">
                         </div>
@@ -280,15 +280,16 @@
                         <div>
                             <img src="images/ZahidEnergo-logo.png" alt="">
                         </div>
-                        <div>
+                        <div class="d-sm-none d-md-block">
                             <img src="images/NKRE-logo.png" alt="">
                         </div>
-                        <div>
+                        <div class="d-none d-md-block">
                             <img src="images/UkrEnergo-logo.png" alt="">
                         </div>
-                        <div class="col-sm-12 companies-button">
-                            <button class="green-button">
-                                Переглянути більше можливостей
+                        <div class="col-3 col-sm-6 col-md companies-button">
+                            <button class="green-button d-flex align-items-center justify-content-center">
+                                <span class="d-none d-sm-inline">Переглянути більше можливостей</span>
+                                <span class="d-inline d-sm-none">Та інше</span>
                             </button>
                         </div>
                     </div>
@@ -297,9 +298,9 @@
             <hr class="hr-after-companies">
             <div class="row mt-resp">
                 <div class="container-fluid">
-                    <h2 class="mb-3 ms-5">Новини</h2>
+                    <h2 class="mb-3 ms-sm-5">Новини</h2>
                     <section id="card-carousel" class="splide" aria-label="Beautiful Images">
-                        <div class="splide__track ms-5 me-5">
+                        <div class="splide__track ms-sm-5 me-sm-5">
                             <ul class="splide__list">
                                 <li class="splide__slide">
                                     <div class="splide__slide__container">
@@ -339,11 +340,13 @@
                                     </div>
                                 </li>
                                 <li class="splide__slide">
-                                    <button class="green-button">До інших новин</button>
+                                    <button class="green-button">
+                                        <span>До інших новин</span>
+                                    </button>
                                 </li>
                             </ul>
                         </div>
-                        <div class="carousel-progress mt-5 mx-5">
+                        <div class="carousel-progress mt-2 mt-sm-3 mt-lg-5 mx-sm-5">
                             <div class="carousel-progress-bar"></div>
                         </div>
                     </section>

@@ -9086,7 +9086,6 @@ footer {
 
 /*common usage start*/
 .green-button {
-  color: white;
   background: linear-gradient(90deg, #CCEC06, #2EAA1A);
   border: none;
   border-radius: 25px;
@@ -9094,6 +9093,10 @@ footer {
   width: fit-content;
   padding: 12px 30px;
   transition: all 0.5s ease;
+}
+
+.green-button span {
+  color: white;
 }
 
 .green-button:hover {
@@ -9452,7 +9455,7 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main-menu-table {
     min-height: 60px;
     border-radius: 5px;
@@ -9560,11 +9563,38 @@ footer {
     width: 40%;
   }
 }
+@media (max-width: 479px) {
+  .companies .row div {
+    padding: 3px;
+  }
+  .companies-button button {
+    padding: 12px 0;
+  }
+  .companies-button button span {
+    font-size: 13px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .companies-button button {
+    padding: 10px 0;
+  }
+  .companies-button button span {
+    font-size: 11px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .companies-button button {
+    padding: 10px 0;
+  }
+  .companies-button button span {
+    font-size: 13px;
+  }
+}
 .hr-after-companies {
   border: none;
   height: 3px;
   opacity: 1;
-  margin-top: 100px;
+  margin-top: 7vw;
   background: linear-gradient(90deg, #CCEC06, #2EAA1A);
 }
 
@@ -9595,7 +9625,6 @@ footer {
 }
 .splide__slide__container div {
   display: inline-block;
-  height: 100px;
 }
 .splide__slide__container div a {
   font-family: "Raleway", sans-serif;
@@ -9608,6 +9637,22 @@ footer {
   transition: 0.5s all ease-out;
 }
 
+@media (max-width: 479px) {
+  .splide__slide__container div a {
+    font-size: 17px;
+    line-height: 6vw;
+    height: 25vw;
+    font-weight: bold;
+  }
+}
+@media (min-width: 480px) {
+  .splide__slide__container div a {
+    font-size: 1.7vw;
+    line-height: 3vw;
+    height: 9vw;
+    font-weight: bold;
+  }
+}
 .splide__slide__container:hover img {
   opacity: 1;
 }
@@ -9618,6 +9663,19 @@ footer {
 
 .splide__arrow {
   background: none;
+}
+
+@media (max-width: 479px) {
+  .splide__arrow {
+    display: none;
+  }
+}
+.splide__arrow--prev {
+  left: 0;
+}
+
+.splide__arrow--next {
+  right: 0;
 }
 
 .carousel-progress {
