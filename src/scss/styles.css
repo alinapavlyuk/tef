@@ -9054,6 +9054,11 @@ h2, .h2 {
   font-weight: 100;
 }
 
+@media screen and (max-width: 480px) {
+  h2, .h2 {
+    font-size: 23px;
+  }
+}
 h5, .h5 {
   font-size: 18px;
 }
@@ -9470,6 +9475,31 @@ footer {
   font-weight: lighter;
 }
 
+.major-column {
+  display: contents;
+}
+
+@media screen and (min-width: 768px) {
+  .major-name {
+    margin: 0;
+    font-size: 2.4vw;
+  }
+  .major-description {
+    font-size: 1.4vw;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .major-name {
+    margin: 0;
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 479px) {
+  .major-name {
+    margin: 0;
+    font-size: 5vw;
+  }
+}
 /*major end*/
 /*advantages start*/
 .advantages-number {
