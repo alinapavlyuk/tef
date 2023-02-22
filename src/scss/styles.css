@@ -9014,6 +9014,15 @@ textarea.form-control-lg {
   font-family: "Proxima Nova Semibold";
   src: url("../../fonts/Proxima Nova Font.ttf");
 }
+:root {
+  --app-height: 100%;
+}
+
+.header-container {
+  height: 100vh;
+  height: var(--app-height);
+}
+
 ::placeholder {
   color: #ABB1AC;
 }
