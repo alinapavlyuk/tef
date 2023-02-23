@@ -9,13 +9,14 @@
   src: url('../../fonts/Proxima Nova Font.ttf');
 }
 
-:root {
-  --app-height: 100%;
-}
+//:root {
+//  --app-height: 100%;
+//}
 
 .header-container {
+  background: #0dcaf0;
   height: 100vh;
-  height: var(--app-height);
+  max-height: -webkit-fill-available;
 }
 
 ::placeholder {
