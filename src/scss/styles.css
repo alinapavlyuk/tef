@@ -9014,10 +9014,14 @@ textarea.form-control-lg {
   font-family: "Proxima Nova Semibold";
   src: url("../../fonts/Proxima Nova Font.ttf");
 }
+:root {
+  --app-height: 100%;
+}
+
 .header-container {
   background: #0dcaf0;
   height: 100vh;
-  max-height: -webkit-fill-available;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 ::placeholder {
@@ -9411,10 +9415,10 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .faculty-heading {
-    height: calc(64vh - 20px);
+    height: calc(var(--vh, 1vh) * 64 - 20px);
   }
   .photo-accordion {
-    height: 30vh;
+    height: calc(var(--vh, 1vh) * 30);
   }
 }
 /*accordion end*/
@@ -9647,7 +9651,7 @@ footer {
   .splide__slide__container div a {
     font-size: 17px;
     line-height: 6vw;
-    height: 25vw;
+    height: 24vw;
     font-weight: bold;
   }
 }
