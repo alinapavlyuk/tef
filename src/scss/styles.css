@@ -9018,12 +9018,6 @@ textarea.form-control-lg {
   --app-height: 100%;
 }
 
-.header-container {
-  background: #0dcaf0;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-}
-
 ::placeholder {
   color: #ABB1AC;
 }
@@ -9132,6 +9126,11 @@ footer {
 }
 /*common usage end*/
 /*header*/
+.header-container {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 .logo {
   width: 8vh;
 }
@@ -9633,15 +9632,12 @@ footer {
   opacity: 0.9;
   transition: 0.5s all ease-out;
 }
-.splide__slide__container div {
-  display: inline-block;
-}
 .splide__slide__container div a {
   font-family: "Raleway", sans-serif;
   color: #2D3D2F;
   font-size: 22px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   transition: 0.5s all ease-out;
