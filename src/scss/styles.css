@@ -9085,7 +9085,6 @@ p, span, footer a, .green-button {
 }
 footer {
   background-image: linear-gradient(90deg, rgba(185, 232, 12, 0.6), rgba(49, 172, 27, 0.6));
-  padding: 30px 50px 10px 50px;
 }
 
 /*common usage start*/
@@ -9721,6 +9720,16 @@ footer {
   transition: 0.5s all ease-out;
 }
 
+@media (min-width: 480px) {
+  .footer-links {
+    gap: 10px;
+  }
+}
+@media (max-width: 479px) {
+  .footer-links a {
+    padding-top: 5px;
+  }
+}
 .footer-links a:hover {
   font-weight: bolder;
   color: black;
@@ -9728,6 +9737,12 @@ footer {
 
 .footer-kpi-logos img {
   width: 100%;
+}
+
+@media (min-width: 480px) {
+  .developed_by {
+    text-align: right;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
