@@ -9834,6 +9834,20 @@ footer {
   }
 }
 /*about end*/
+/*history*/
+.grid-item:has(img) img:not(.vertical-picture) {
+  width: 100%;
+}
+
+@media screen and (max-width: 479px) {
+  .grid-item {
+    position: unset !important;
+  }
+  .grid-item:has(img) span {
+    font-style: italic;
+  }
+}
+/*history end*/
 /*footer*/
 .contacts img {
   width: 15px;
