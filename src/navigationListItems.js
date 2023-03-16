@@ -1,10 +1,14 @@
+let path = window.location.pathname;
+let page = path.split("/").pop();
+let isMain = page === 'index.html';
+
 export const navigationListItems =
     [
         {
             name: "Про кафедру",
-            link: "#",
+            link: isMain ? "html/about.html" : "about.html",
             dropdown: [
-                {name: "Історія", link: "#"},
+                {name: "Історія", link: "history.html"},
                 {name: "Положення", link: "#"},
                 {name: "Матеріали акредитації", link: "#"},
                 {name: "Викладачі", link: "#"},

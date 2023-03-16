@@ -158,7 +158,7 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-p {
+p, .color-dot-list li {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -9014,6 +9014,10 @@ textarea.form-control-lg {
   font-family: "Proxima Nova Semibold";
   src: url("../../fonts/Proxima Nova Font.ttf");
 }
+@font-face {
+  font-family: "Raleway";
+  src: url("../../fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
 :root {
   --app-height: 100%;
 }
@@ -9023,7 +9027,7 @@ textarea.form-control-lg {
 }
 
 header {
-  font-size: 15px;
+  font-size: 18px;
   font-family: "Raleway", serif;
 }
 
@@ -9058,28 +9062,46 @@ h2, .h2 {
   font-weight: 100;
 }
 
-@media screen and (max-width: 480px) {
+h3, .h3 {
+  font-family: "Raleway", sans-serif;
+  color: #2D3D2F;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
   h2, .h2 {
-    font-size: 23px;
+    font-size: 24px;
+  }
+  h3, .h3 {
+    font-size: 18px;
   }
 }
 h5, .h5 {
   font-size: 18px;
 }
 
-p, span, footer a, .green-button {
+p, .color-dot-list li, span, footer a, .green-button {
   font-family: "Raleway", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   color: #2D3D2F;
 }
 
+span, footer a, .green-button {
+  font-weight: 400;
+}
+
+p, .color-dot-list li {
+  font-weight: 300;
+}
+
 @media screen and (min-width: 1501px) {
-  p, span, footer a, .green-button {
+  p, .color-dot-list li, span, footer a, .green-button {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 480px), (orientation: portrait) {
-  p, span, footer a, .green-button {
+  p, .color-dot-list li, span, footer a, .green-button {
     font-size: 16px;
   }
 }
@@ -9092,7 +9114,6 @@ footer {
   background: linear-gradient(90deg, #CCEC06, #2EAA1A);
   border: none;
   border-radius: 25px;
-  font-weight: 900;
   width: fit-content;
   padding: 12px 30px;
   transition: all 0.5s ease;
@@ -9100,6 +9121,7 @@ footer {
 
 .green-button span {
   color: white;
+  font-weight: 400;
 }
 
 .green-button:hover {
@@ -9117,6 +9139,41 @@ footer {
 
 .mb-resp {
   margin-bottom: 15vh;
+}
+
+.gradient-text, .color-dot-list li::before {
+  background: linear-gradient(96.45deg, #CCEC06 3.29%, #69D826 29.91%, #2EAA1A 95.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text {
+  color: #2EAA1A;
+}
+
+.green-link {
+  color: #2EAA1A;
+  text-decoration: underline;
+  transition: all 0.3s linear;
+}
+.green-link:hover {
+  color: #2EAA1A;
+  font-weight: 500;
+}
+
+.color-dot-list {
+  list-style: none;
+}
+.color-dot-list li::before {
+  content: "";
+  font-weight: bold;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: linear-gradient(90deg, #CCEC06, #2EAA1A);
 }
 
 @media screen and (max-width: 480px), (orientation: portrait) {
@@ -9138,7 +9195,7 @@ footer {
 }
 
 .logo {
-  width: 8vh;
+  width: 10vh;
 }
 
 @media screen and (max-width: 480px), (orientation: portrait) {
@@ -9162,7 +9219,7 @@ footer {
 }
 
 .main-nav ul li a {
-  font-weight: 700;
+  font-weight: 500;
   color: #2D3D2F;
 }
 
@@ -9429,12 +9486,16 @@ footer {
 /*accordion end*/
 /*main*/
 /*main menu start*/
-.main-menu {
+.box-menu {
   font-family: "Raleway", sans-serif;
+  font-size: 28px;
+}
+
+.main-menu {
   font-size: 18px;
 }
 
-.main-menu-heading {
+.outside-menu-heading {
   font-weight: 500;
   display: inline-block;
   background-color: white;
@@ -9444,7 +9505,7 @@ footer {
   left: 20px;
 }
 
-.main-menu-table {
+.box-menu-table {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9452,45 +9513,63 @@ footer {
   border: 2px solid #2EAA1A;
   min-height: 150px;
 }
-.main-menu-table ul {
+.box-menu-table ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.main-menu-table a {
+.box-menu-table a {
   text-decoration: underline;
   color: #2EAA1A;
   transition: 0.5s all ease-out;
 }
-.main-menu-table a:hover {
+.box-menu-table a:hover {
   color: #2D3D2F;
 }
 
-.main-menu-mobile-header {
+.box-menu-table:not(.main-menu-table) {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.inside-heading a {
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+.main-menu-table ul .inside-heading {
   display: none;
 }
 
+@media screen and (max-width: 991px) {
+  .box-menu-table {
+    min-height: 100px;
+  }
+  .box-menu {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 767px) {
-  .main-menu-table {
+  .box-menu-table {
     min-height: 60px;
     border-radius: 5px;
   }
-  .main-menu ul li:not(.main-menu-mobile-header), .main-menu-heading {
+  .main-menu-table ul li:not(.inside-heading), .outside-menu-heading {
     display: none;
   }
-  .main-menu-mobile-header {
+  .main-menu-table ul .inside-heading {
     display: list-item;
   }
-  .main-menu-mobile-header a {
-    text-decoration: none !important;
-    -webkit-text-stroke: 1px #2EAA1A;
+}
+@media screen and (max-width: 480px) {
+  .box-menu {
+    font-size: 20px;
   }
 }
 /*main menu end*/
 /*major start*/
 .major-description {
   margin: 0;
-  font-weight: lighter;
 }
 
 .major-column {
@@ -9545,7 +9624,7 @@ footer {
   padding-top: 20px;
 }
 
-.advantages-list-item p {
+.advantages-list-item p, .advantages-list-item .color-dot-list li, .color-dot-list .advantages-list-item li {
   margin: 0;
   font-size: 18px;
   padding: 0 30px 0 35px;
@@ -9582,7 +9661,7 @@ footer {
     height: 27vh;
     padding-top: 2vh;
   }
-  .advantages-list-item p {
+  .advantages-list-item p, .advantages-list-item .color-dot-list li, .color-dot-list .advantages-list-item li {
     font-size: 2vh;
     margin: 0;
     padding: 0;
@@ -9639,7 +9718,7 @@ footer {
     font-size: 13px;
   }
 }
-.hr-after-companies {
+.dividing-hr {
   border: none;
   height: 3px;
   opacity: 1;
@@ -9676,6 +9755,7 @@ footer {
   font-family: "Raleway", sans-serif;
   color: #2D3D2F;
   font-size: 22px;
+  font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -9688,7 +9768,6 @@ footer {
     font-size: 17px;
     line-height: 6vw;
     height: 24vw;
-    font-weight: bold;
   }
 }
 @media (min-width: 480px) {
@@ -9696,14 +9775,13 @@ footer {
     font-size: 1.7vw;
     line-height: 3vw;
     height: 9vw;
-    font-weight: bold;
   }
 }
 .splide__slide__container:hover img {
   opacity: 1;
 }
 .splide__slide__container:hover div a {
-  font-weight: 900;
+  font-weight: 500;
   color: black;
 }
 
@@ -9739,6 +9817,23 @@ footer {
 }
 
 /*carousel end*/
+/*about*/
+.number {
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 100px;
+}
+
+@media screen and (max-width: 991px) {
+  .number {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .number {
+    font-size: 70px;
+  }
+}
+/*about end*/
 /*footer*/
 .contacts img {
   width: 15px;
