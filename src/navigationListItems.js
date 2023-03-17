@@ -9,8 +9,8 @@ export const navigationListItems =
             link: isMain ? "html/about.html" : "about.html",
             dropdown: [
                 {name: "Історія", link: "history.html"},
-                {name: "Положення", link: "regularisation.html"},
-                {name: "Матеріали акредитації", link: "#"},
+                {name: "Положення", link: "state.html"},
+                {name: "Матеріали акредитації", link: "accreditation.html"},
                 {name: "Викладачі", link: "#"},
                 {name: "Партнери",link: "#"},
                 {name: "Міжнародна співпраця", link: "#"},
