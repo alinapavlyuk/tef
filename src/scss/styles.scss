@@ -33,6 +33,10 @@ header {
   }
 }
 
+main {
+  flex:1;
+}
+
 a {
   text-decoration: none;
 }
@@ -107,7 +111,6 @@ p {
 
 footer {
   background-image: linear-gradient(90deg , rgba(185, 232, 12,0.6), rgba(49, 172, 27,0.6));
-  //padding: 30px 50px 10px 50px;
 }
 
 /*common usage start*/

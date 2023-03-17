@@ -9036,6 +9036,10 @@ header {
     font-size: 17px;
   }
 }
+main {
+  flex: 1;
+}
+
 a {
   text-decoration: none;
 }
