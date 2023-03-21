@@ -9027,8 +9027,9 @@ textarea.form-control-lg {
 }
 
 header {
-  font-size: 18px;
   font-family: "Raleway", serif;
+  font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on, "ss11" on, "ss10" on, "ss09" on, "ss06" on, "ss08" on, "ss07" on, "ordn" on;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 1501px) {
@@ -9045,7 +9046,8 @@ a {
 }
 
 button {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
+  font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on, "ss11" on, "ss10" on, "ss09" on, "ss06" on, "ss08" on, "ss07" on, "ordn" on;
 }
 
 input {
@@ -9067,9 +9069,10 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
+  font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on, "ss11" on, "ss10" on, "ss09" on, "ss06" on, "ss08" on, "ss07" on, "ordn" on;
   color: #2D3D2F;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -9086,12 +9089,13 @@ h5, .h5 {
 }
 
 p, .color-dot-list li, span, footer a, .green-button {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
+  font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on, "ss11" on, "ss10" on, "ss09" on, "ss06" on, "ss08" on, "ss07" on, "ordn" on;
   font-size: 18px;
   color: #2D3D2F;
 }
 
-span, footer a, .green-button {
+span, footer a {
   font-weight: 400;
 }
 
@@ -9109,6 +9113,11 @@ p, .color-dot-list li {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 479px) {
+  img {
+    border-radius: 4px;
+  }
+}
 footer {
   background-image: linear-gradient(90deg, rgba(185, 232, 12, 0.6), rgba(49, 172, 27, 0.6));
 }
@@ -9117,7 +9126,7 @@ footer {
 .green-button {
   background: linear-gradient(90deg, #CCEC06, #2EAA1A);
   border: none;
-  border-radius: 25px;
+  border-radius: 50px;
   width: fit-content;
   padding: 12px 30px;
   transition: all 0.5s ease;
@@ -9125,7 +9134,7 @@ footer {
 
 .green-button span {
   color: white;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .green-button:hover {
@@ -9180,6 +9189,16 @@ footer {
   background: linear-gradient(90deg, #CCEC06, #2EAA1A);
 }
 
+.return-arrow {
+  height: 30px;
+  vertical-align: text-bottom;
+}
+
+@media screen and (max-width: 991px) {
+  .return-arrow {
+    height: 20px;
+  }
+}
 @media screen and (max-width: 480px), (orientation: portrait) {
   .main-mt {
     margin-top: 1.5vh;
@@ -9756,7 +9775,8 @@ footer {
   transition: 0.5s all ease-out;
 }
 .splide__slide__container div a {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
+  font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on, "ss11" on, "ss10" on, "ss09" on, "ss06" on, "ss08" on, "ss07" on, "ordn" on;
   color: #2D3D2F;
   font-size: 22px;
   font-weight: 500;
@@ -9852,6 +9872,17 @@ footer {
   }
 }
 /*history end*/
+/*lecturer*/
+@media screen and (max-width: 479px) {
+  .lecturer-side-info {
+    display: contents;
+  }
+  .lecturer-image, .lecturer-under-image-info {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+/*lecturer end*/
 /*footer*/
 .contacts img {
   width: 15px;

@@ -1,9 +1,34 @@
 [[redirects]]
-from = "/*"
-to = "/html/*"
+from = "/about.html"
+to = "/html/about.html"
 status = 200
 
 [[redirects]]
-from = "/index.html"
+from = "/history.html"
+to = "/html/history.html"
+status = 200
+
+[[redirects]]
+from = "/accreditation.html"
+to = "/html/accreditation.html"
+status = 200
+
+[[redirects]]
+from = "/state.html"
+to = "/html/state.html"
+status = 200
+
+[[redirects]]
+from = "/lecturers.html"
+to = "/html/lecturers.html"
+status = 200
+
+[[redirects]]
+from = "/lecturer.html"
+to = "/html/lecturer.html"
+status = 200
+
+[[redirects]]
+from = "/*"
 to = "/index.html"
 status = 200
