@@ -34,6 +34,11 @@ to = "/html/partners.html"
 status = 200
 
 [[redirects]]
+from = "/international_coop.html"
+to = "/html/international_coop.html"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200

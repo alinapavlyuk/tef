@@ -48,6 +48,7 @@ main {
 }
 
 a {
+  @include raleway-font-with-settings;
   text-decoration: none;
 }
 
@@ -201,14 +202,29 @@ footer {
   }
 }
 
+.return-arrow{
+  vertical-align: text-bottom;
+}
+
+.flag-coop {
+  vertical-align: text-top;
+}
+
 .return-arrow {
   height: 30px;
-  vertical-align: text-bottom;
+}
+
+.flag-coop {
+  height: 18px;
 }
 
 @media screen and (max-width: 991px){
   .return-arrow {
     height: 20px;
+  }
+
+  .flag-coop {
+    height: 15px;
   }
 }
 

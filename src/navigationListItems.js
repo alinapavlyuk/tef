@@ -13,7 +13,7 @@ export const navigationListItems =
                 {name: "Матеріали акредитації", link: isMain ? "html/accreditation.html" : "accreditation.html"},
                 {name: "Викладачі", link: isMain ? "html/lecturers.html" : "lecturers.html"},
                 {name: "Партнери",link: "partners.html"},
-                {name: "Міжнародна співпраця", link: "#"},
+                {name: "Міжнародна співпраця", link: "international_coop.html"},
                 {name: "Випускники", link: "#"},
                 {name: "Документообіг",link: "#"},
                 {name: "Дистанційні засоби навчання", link: "#"}

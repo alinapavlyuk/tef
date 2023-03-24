@@ -9042,6 +9042,8 @@ main {
 }
 
 a {
+  font-family: "Raleway", serif;
+  font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on, "ss11" on, "ss10" on, "ss09" on, "ss06" on, "ss08" on, "ss07" on, "ordn" on;
   text-decoration: none;
 }
 
@@ -9190,13 +9192,27 @@ footer {
 }
 
 .return-arrow {
-  height: 30px;
   vertical-align: text-bottom;
+}
+
+.flag-coop {
+  vertical-align: text-top;
+}
+
+.return-arrow {
+  height: 30px;
+}
+
+.flag-coop {
+  height: 18px;
 }
 
 @media screen and (max-width: 991px) {
   .return-arrow {
     height: 20px;
+  }
+  .flag-coop {
+    height: 15px;
   }
 }
 @media screen and (max-width: 480px), (orientation: portrait) {
