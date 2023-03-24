@@ -8,6 +8,7 @@ const lectureInfo = lecturers.find((lecturer) => lecturer.id === parseInt(lectur
 function showLecturerInfoByID() {
     let sideInfo = document.querySelector("#lecturer-side");
     let mainInfo = document.querySelector("#lecturer-main");
+    document.title = `${lectureInfo.name} - КПІ ТАЕ`;
     sideInfo.innerHTML += `
         <div class="lecturer-image mb-4 mb-sm-0">
             <img src="${lectureInfo.image}" class="w-100" alt="">

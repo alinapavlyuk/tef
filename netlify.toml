@@ -29,6 +29,11 @@ to = "/html/lecturer.html"
 status = 200
 
 [[redirects]]
+from = "/partners.html"
+to = "/html/partners.html"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
