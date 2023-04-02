@@ -1,4 +1,4 @@
-import {getLink, lecturers} from "./data/lecturers_data.js";
+import {getLink, lecturers} from "../data/lecturers_data.js";
 
 function showLectures() {
     let lecturersSection = document.querySelector("#lecturers");

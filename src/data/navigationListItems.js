@@ -14,7 +14,7 @@ export const navigationListItems =
                 {name: "Викладачі", link: isMain ? "html/lecturers.html" : "lecturers.html"},
                 {name: "Партнери",link: "partners.html"},
                 {name: "Міжнародна співпраця", link: "international_coop.html"},
-                {name: "Випускники", link: "#"},
+                {name: "Випускники", link: "alumni.html"},
                 {name: "Документообіг",link: "#"},
                 {name: "Дистанційні засоби навчання", link: "#"}
             ]

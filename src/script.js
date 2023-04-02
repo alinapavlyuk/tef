@@ -1,4 +1,4 @@
-import {navigationListItems} from "./navigationListItems.js";
+import {navigationListItems} from "./data/navigationListItems.js";
 
 function showMainNavigationBar() {
     let navigationList = document.querySelector("#main-navigation-list");

@@ -39,6 +39,16 @@ to = "/html/international_coop.html"
 status = 200
 
 [[redirects]]
+from = "/alumni.html"
+to = "/html/alumni.html"
+status = 200
+
+[[redirects]]
+from = "/alumnus.html"
+to = "/html/alumnus.html"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200

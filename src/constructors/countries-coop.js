@@ -1,4 +1,4 @@
-import {countriesCoop} from "./data/countries_coop_data.js";
+import {countriesCoop} from "../data/countries_coop_data.js";
 
 function showCountriesCoop() {
     let countriesCoopSection = document.querySelector("#countries-coop");

@@ -84,7 +84,7 @@ export const partners = [
 
     {
         name: "НЕК “Укренерго“",
-        image: "../images/partners/urkenergo.png"
+        image: "../images/partners/ukrenergo.png"
     },
     {
         name: "Запорізька атомна електростанція",

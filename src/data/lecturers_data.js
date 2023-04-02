@@ -7,7 +7,7 @@ export const lecturers =
     [
         {
             id: 1,
-            image: "../images/lecturer-1.png",
+            image: "../images/lecturers/lecturer-1.png",
             name: "АВРАМЕНКО Антоніна Антонівна",
             position: "Старший викладач",
             subjects: [
@@ -20,7 +20,7 @@ export const lecturers =
         },
         {
             id: 2,
-            image: "../images/lecturer-2.png",
+            image: "../images/lecturers/lecturer-2.png",
             name: "АВРАМЕНКО Антоніна Антонівна",
             position: "Старший викладач",
             subjects: [
@@ -34,7 +34,7 @@ export const lecturers =
         },
         {
             id: 3,
-            image: "../images/lecturer-3.png",
+            image: "../images/lecturers/lecturer-3.png",
             name: "АВРАМЕНКО Антоніна Антонівна",
             position: "Старший викладач",
             subjects: [
@@ -47,7 +47,7 @@ export const lecturers =
         },
         {
             id: 4,
-            image: "../images/lecturer-1.png",
+            image: "../images/lecturers/lecturer-1.png",
             name: "АВРАМЕНКО Антоніна Антонівна",
             position: "Старший викладач",
             subjects: [
@@ -60,7 +60,7 @@ export const lecturers =
         },
         {
             id: 5,
-            image: "../images/lecturer-2.png",
+            image: "../images/lecturers/lecturer-2.png",
             name: "АВРАМЕНКО Антоніна Антонівна",
             position: "Старший викладач",
             subjects: [
@@ -73,7 +73,7 @@ export const lecturers =
         },
         {
             id: 6,
-            image: "../images/lecturer-3.png",
+            image: "../images/lecturers/lecturer-3.png",
             name: "АВРАМЕНКО Антоніна Антонівна",
             position: "Старший викладач",
             subjects: [

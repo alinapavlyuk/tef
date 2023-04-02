@@ -9390,7 +9390,7 @@ footer {
   width: 17px;
   height: 17px;
   background-color: transparent;
-  background-image: url("../../images/search-icon.svg");
+  background-image: url("../../images/headerIcons/search-icon.svg");
   background-size: cover;
   padding: 0;
 }
@@ -9477,19 +9477,19 @@ footer {
 }
 
 .accordion-item-1 {
-  background-image: url("../../images/accordion-1.png");
+  background-image: url("../../images/accordionMain/accordion-1.png");
 }
 
 .accordion-item-2 {
-  background-image: url("../../images/accordion-2.png");
+  background-image: url("../../images/accordionMain/accordion-2.png");
 }
 
 .accordion-item-3 {
-  background-image: url("../../images/accordion-3.png");
+  background-image: url("../../images/accordionMain/accordion-3.png");
 }
 
 .accordion-item-4 {
-  background-image: url("../../images/accordion-4.png");
+  background-image: url("../../images/accordionMain/accordion-4.png");
 }
 
 @media screen and (max-width: 1200px) {
@@ -9680,7 +9680,7 @@ footer {
 @media screen and (max-width: 479px) {
   .advantages {
     height: 100vh;
-    background-image: url("../../images/advs-borders-mobile.png");
+    background-image: url("../../images/details/advs-borders-mobile.png");
     background-repeat: no-repeat;
     background-size: 95% 100vh;
     background-position: center;

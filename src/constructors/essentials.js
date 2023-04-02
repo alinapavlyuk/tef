@@ -3,8 +3,8 @@ let footer = document.querySelector("footer");
 header.innerHTML += `<div class="container-fluid">
             <div class="row main-nav mx-4">
                 <div class="col-3 p-0">
-                    <a href="../index.html">
-                        <img src="../images/logo.svg" alt="logo" class="logo">
+                    <a href="../../index.html">
+                        <img src="../../images/headerIcons/logo.svg" alt="logo" class="logo">
                     </a>
                 </div>
                 <div class="col-6 d-flex align-items-center">
@@ -41,8 +41,8 @@ header.innerHTML += `<div class="container-fluid">
             </div>
             <div class="row side-nav">
                 <nav class="navbar fixed-top px-3">
-                    <a href="../index.html">
-                        <img src="../images/logo.svg" alt="logo" class="logo">
+                    <a href="../../index.html">
+                        <img src="../../images/headerIcons/logo.svg" alt="logo" class="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -75,7 +75,7 @@ footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
                     <div class="col-10 col-sm-12 contacts">
                         <div class="row align-items-center mb-2">
                             <div class="col-auto">
-                                <img src="../images/phone-icon.svg" alt="">
+                                <img src="../../images/footerIcons/phone-icon.svg" alt="">
                             </div>
                             <div class="col-auto">
                                 <span>+38 (044) 204 80 96</span>
@@ -85,7 +85,7 @@ footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
                         </div>
                         <div class="row align-items-center mb-2">
                             <div class="col-auto">
-                                <img src="../images/mail-icon.svg" alt="">
+                                <img src="../../images/footerIcons/mail-icon.svg" alt="">
                             </div>
                             <div class="col-auto">
                                 <span>www@gmail.com</span>
@@ -93,7 +93,7 @@ footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
                         </div>
                         <div class="row align-items-center mb-2">
                             <div class="col-auto">
-                                <img src="../images/location-icon.svg" alt="">
+                                <img src="../../images/footerIcons/location-icon.svg" alt="">
                             </div>
                             <div class="col">
                                 <span>
@@ -108,12 +108,12 @@ footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
                         <div class="row">
                             <div class="col-auto facebook-link">
                                 <a href="">
-                                    <img src="../images/facebook-icon.svg" alt="">
+                                    <img src="../../images/footerIcons/facebook-icon.svg" alt="">
                                 </a>
                             </div>
                             <div class="col telegram-link">
                                 <a href="">
-                                    <img src="../images/telegram-icon.svg" alt="">
+                                    <img src="../../images/footerIcons/telegram-icon.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -131,7 +131,7 @@ footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
             <div class="col-12 col-sm-6 footer-kpi-logos">
                 <div class="row mt-3 mt-sm-0 align-items-center">
                     <div class="col-3">
-                        <img src="../images/univercity-logo-big.svg" alt="">
+                        <img src="../../images/footerIcons/univercity-logo-big.svg" alt="">
                     </div>
                     <div class="col-9">
                             <span>
@@ -142,7 +142,7 @@ footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
                 </div>
                 <div class="row mt-3 mt-sm-2 align-items-center">
                     <div class="col-3">
-                        <img src="../images/univercity-logo-big.svg" alt="">
+                        <img src="../../images/footerIcons/univercity-logo-big.svg" alt="">
                     </div>
                     <div class="col-9">
                             <span>
