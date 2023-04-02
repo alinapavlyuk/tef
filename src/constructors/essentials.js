@@ -3,7 +3,7 @@ let footer = document.querySelector("footer");
 header.innerHTML += `<div class="container-fluid">
             <div class="row main-nav mx-4">
                 <div class="col-3 p-0">
-                    <a href="../../index.html">
+                    <a href="../index.html">
                         <img src="../../images/headerIcons/logo.svg" alt="logo" class="logo">
                     </a>
                 </div>
@@ -41,7 +41,7 @@ header.innerHTML += `<div class="container-fluid">
             </div>
             <div class="row side-nav">
                 <nav class="navbar fixed-top px-3">
-                    <a href="../../index.html">
+                    <a href="../index.html">
                         <img src="../../images/headerIcons/logo.svg" alt="logo" class="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

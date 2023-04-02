@@ -12,11 +12,11 @@ export const navigationListItems =
                 {name: "Положення", link: isMain ? "html/state.html" : "state.html"},
                 {name: "Матеріали акредитації", link: isMain ? "html/accreditation.html" : "accreditation.html"},
                 {name: "Викладачі", link: isMain ? "html/lecturers.html" : "lecturers.html"},
-                {name: "Партнери",link: "partners.html"},
-                {name: "Міжнародна співпраця", link: "international_coop.html"},
-                {name: "Випускники", link: "alumni.html"},
-                {name: "Документообіг",link: "#"},
-                {name: "Дистанційні засоби навчання", link: "#"}
+                {name: "Партнери",link: isMain ? "html/partners.html" : "partners.html"},
+                {name: "Міжнародна співпраця", link: isMain ? "html/international_coop.html" : "international_coop.html"},
+                {name: "Випускники", link: isMain ? "html/alumni.html" : "alumni.html"},
+                {name: "Документообіг",link: isMain ? "html/document_circulation.html" : "document_circulation.html"},
+                {name: "Дистанційні засоби навчання", link: isMain ? "html/offline_studying.html" : "offline_studying.html"}
             ]
         },
         {
