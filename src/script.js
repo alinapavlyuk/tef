@@ -1,11 +1,11 @@
-import {navigationListItems} from "./data/navigationListItems.js";
+import {navigationListItems, setLinksNavigation} from "./data/navigationListItems.js";
 
 function showMainNavigationBar() {
     let navigationList = document.querySelector("#main-navigation-list");
     navigationListItems.forEach(function (item, index) {
         navigationList.innerHTML += `
         <li id="main-nav-item-${index}">
-           <a href = ${item.link} id="main-link-${index}">${item.name}</a>
+           <a href = "${setLinksNavigation(item.link)}" id="main-link-${index}">${item.name}</a>
            <div class="space-before-dropdown"></div>
         </li>
         `
@@ -20,7 +20,7 @@ function showMainNavigationBar() {
             let dropdownMenu = document.querySelector(`#main-dropdown-${index}`);
             item.dropdown.forEach(function (dropdownItem) {
                 dropdownMenu.innerHTML += `
-                <a href = ${dropdownItem.link}>${dropdownItem.name}</a>
+                <a href = "${setLinksNavigation(dropdownItem.link)}">${dropdownItem.name}</a>
                 `
             })
         }
@@ -32,7 +32,7 @@ function showSideNavigationBar() {
     navigationListItems.forEach(function (item, index) {
         navigationList.innerHTML += `
         <li class="nav-item" id="side-nav-item-${index}">
-           <a href=${item.link} class="nav-link" id="side-link-${index}">${item.name}</a>
+           <a href="#" class="nav-link" id="side-link-${index}">${item.name}</a>
         </li>
         `
         if(item.dropdown.length !== 0) {
@@ -46,11 +46,11 @@ function showSideNavigationBar() {
                 `
             let dropdownMenu = document.querySelector(`#side-dropdown-${index}`);
                 dropdownMenu.innerHTML += `
-                    <li><a class="dropdown-item" href="${item.link}">${item.name}</a></li>
+                    <li><a class="dropdown-item" href="${setLinksNavigation(item.link)}">${item.name}</a></li>
                 `
                 item.dropdown.forEach(function (dropdownItem) {
                 dropdownMenu.innerHTML += `
-                    <li><a class="dropdown-item" href="${dropdownItem.link}">${dropdownItem.name}</a></li>
+                    <li><a class="dropdown-item" href=""${setLinksNavigation(dropdownItem.link)}"">${dropdownItem.name}</a></li>
                 `
             })
         }

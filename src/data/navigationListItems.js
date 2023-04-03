@@ -2,26 +2,37 @@ let path = window.location.pathname;
 let page = path.split("/").pop();
 let isMain = page === 'index.html';
 
+export function setLinksNavigation(link) {
+    console.log("bebra");
+    if(isMain) {
+        console.log(1);
+        console.log(`html/${link}`);
+        return `html/${link}`;
+    } else {
+        return link;
+    }
+}
+
 export const navigationListItems =
     [
         {
             name: "Про кафедру",
-            link: isMain ? "html/about.html" : "about.html",
+            link: "about.html",
             dropdown: [
-                {name: "Історія", link: isMain ? "html/history.html" : "history.html"},
-                {name: "Положення", link: isMain ? "html/state.html" : "state.html"},
-                {name: "Матеріали акредитації", link: isMain ? "html/accreditation.html" : "accreditation.html"},
-                {name: "Викладачі", link: isMain ? "html/lecturers.html" : "lecturers.html"},
-                {name: "Партнери",link: isMain ? "html/partners.html" : "partners.html"},
-                {name: "Міжнародна співпраця", link: isMain ? "html/international_coop.html" : "international_coop.html"},
-                {name: "Випускники", link: isMain ? "html/alumni.html" : "alumni.html"},
-                {name: "Документообіг",link: isMain ? "html/document_circulation.html" : "document_circulation.html"},
-                {name: "Дистанційні засоби навчання", link: isMain ? "html/offline_studying.html" : "offline_studying.html"}
+                {name: "Історія", link: "history.html"},
+                {name: "Положення", link: "state.html"},
+                {name: "Матеріали акредитації", link: "accreditation.html"},
+                {name: "Викладачі", link: "lecturers.html"},
+                {name: "Партнери",link: "partners.html"},
+                {name: "Міжнародна співпраця", link: "international_coop.html"},
+                {name: "Випускники", link: "alumni.html"},
+                {name: "Документообіг",link: "document_circulation.html"},
+                {name: "Дистанційні засоби навчання", link: "offline_studying.html"}
             ]
         },
         {
             name: "Вступ",
-            link: "#",
+            link: "admission.html",
             dropdown: [
                 {name:"Про спеціальність", link: "#"},
                 {name: "На 1 курс(за ЗНО)", link: "#"},
