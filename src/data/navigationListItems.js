@@ -3,10 +3,7 @@ let page = path.split("/").pop();
 let isMain = page === 'index.html';
 
 export function setLinksNavigation(link) {
-    console.log("bebra");
     if(isMain) {
-        console.log(1);
-        console.log(`html/${link}`);
         return `html/${link}`;
     } else {
         return link;
@@ -34,7 +31,7 @@ export const navigationListItems =
             name: "Вступ",
             link: "admission.html",
             dropdown: [
-                {name:"Про спеціальність", link: "#"},
+                {name:"Про спеціальність", link: "speciality.html"},
                 {name: "На 1 курс(за ЗНО)", link: "#"},
                 {name: "Молодший спеціаліст", link: "#"},
                 {name: "Магістратура", link: "#"},

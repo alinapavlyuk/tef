@@ -50,7 +50,7 @@ function showSideNavigationBar() {
                 `
                 item.dropdown.forEach(function (dropdownItem) {
                 dropdownMenu.innerHTML += `
-                    <li><a class="dropdown-item" href=""${setLinksNavigation(dropdownItem.link)}"">${dropdownItem.name}</a></li>
+                    <li><a class="dropdown-item" href="${setLinksNavigation(dropdownItem.link)}">${dropdownItem.name}</a></li>
                 `
             })
         }

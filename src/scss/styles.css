@@ -9097,6 +9097,11 @@ p, .color-dot-list li, span, footer a, .green-button {
   color: #2D3D2F;
 }
 
+.vjs-icon-placeholder, .vjs-remaining-time span {
+  font-size: inherit;
+  color: inherit;
+}
+
 span, footer a {
   font-weight: 400;
 }
@@ -9899,6 +9904,19 @@ footer {
   }
 }
 /*lecturer end*/
+/*video player*/
+.video-js, .vjs-big-play-button, .vjs-big-play-button .vjs-icon-placeholder:before {
+  content: "";
+  background-image: url("../../images/video-player/play-button.png");
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: 46px;
+  background-position: 55% calc(50% - 0px);
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/*video player end*/
 /*footer*/
 .contacts img {
   width: 15px;
