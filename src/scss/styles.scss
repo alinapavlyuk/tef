@@ -1018,6 +1018,13 @@ footer {
     }
   }
 }
+@media screen and (max-width: 991px) {
+  .table-small-padding-mobile {
+    td {
+      padding: 10px 10px;
+    }
+  }
+}
 /*admission end*/
 
 /*video player*/

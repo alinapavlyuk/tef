@@ -74,6 +74,11 @@ to = "/html/admission-zno.html"
 status = 200
 
 [[redirects]]
+from = "/admission-junior-specialist.html"
+to = "/html/admission-junior-specialist.html"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
