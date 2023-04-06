@@ -9086,23 +9086,37 @@ h3, .h3 {
     font-size: 18px;
   }
 }
-h5, .h5 {
-  font-size: 18px;
+table {
+  font-weight: 300 !important;
+  width: 100%;
+  border: 2px solid #2EAA1A;
+}
+table td, table th {
+  font-weight: 400;
+  padding: 10px 15px;
+  border: 1px solid #2EAA1A;
+  border-collapse: collapse;
+}
+table .table-heading {
+  background-color: rgba(46, 170, 26, 0.2);
+}
+table .even-table-row {
+  background-color: rgba(46, 170, 26, 0.05);
 }
 
-p, .color-dot-list li, span, footer a, .green-button {
+p, .color-dot-list li, span, table, footer a, .green-button {
   font-family: "Raleway", serif;
   font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on, "ss11" on, "ss10" on, "ss09" on, "ss06" on, "ss08" on, "ss07" on, "ordn" on;
   font-size: 18px;
   color: #2D3D2F;
 }
 
-.vjs-icon-placeholder, .vjs-remaining-time span {
+.vjs-icon-placeholder, .vjs-remaining-time span, .vjs-remaining-time table {
   font-size: inherit;
   color: inherit;
 }
 
-span, footer a {
+span, table, footer a {
   font-weight: 400;
 }
 
@@ -9111,12 +9125,12 @@ p, .color-dot-list li {
 }
 
 @media screen and (min-width: 1501px) {
-  p, .color-dot-list li, span, footer a, .green-button {
+  p, .color-dot-list li, span, table, footer a, .green-button {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 480px), (orientation: portrait) {
-  p, .color-dot-list li, span, footer a, .green-button {
+  p, .color-dot-list li, span, table, footer a, .green-button {
     font-size: 16px;
   }
 }
@@ -9139,7 +9153,7 @@ footer {
   transition: all 0.5s ease;
 }
 
-.green-button span {
+.green-button span, .green-button table {
   color: white;
   font-weight: 600;
 }
@@ -9169,6 +9183,11 @@ footer {
 
 .green-text {
   color: #2EAA1A;
+  font-weight: 500;
+}
+
+.bold-text {
+  font-weight: 600;
 }
 
 .green-link {
@@ -9181,8 +9200,13 @@ footer {
   font-weight: 500;
 }
 
+.warning-border {
+  border: 3px solid #2EAA1A;
+}
+
 .color-dot-list {
   list-style: none;
+  margin-left: 0;
 }
 .color-dot-list li::before {
   content: "";
@@ -9194,6 +9218,12 @@ footer {
   border-radius: 10px;
   margin-right: 10px;
   background: linear-gradient(90deg, #CCEC06, #2EAA1A);
+}
+.color-dot-list .not-doted-list-item {
+  padding-left: 20px;
+}
+.color-dot-list .not-doted-list-item::before {
+  display: none;
 }
 
 .return-arrow {
@@ -9439,7 +9469,7 @@ footer {
     width: 100%;
     padding: 0;
   }
-  .faculty-heading span {
+  .faculty-heading span, .faculty-heading table {
     margin: 0;
   }
 }
@@ -9742,7 +9772,7 @@ footer {
   .companies-button button {
     padding: 12px 0;
   }
-  .companies-button button span {
+  .companies-button button span, .companies-button button table {
     font-size: 13px;
   }
 }
@@ -9750,7 +9780,7 @@ footer {
   .companies-button button {
     padding: 10px 0;
   }
-  .companies-button button span {
+  .companies-button button span, .companies-button button table {
     font-size: 11px;
   }
 }
@@ -9758,7 +9788,7 @@ footer {
   .companies-button button {
     padding: 10px 0;
   }
-  .companies-button button span {
+  .companies-button button span, .companies-button button table {
     font-size: 13px;
   }
 }
@@ -9888,7 +9918,7 @@ footer {
   .grid-item {
     position: unset !important;
   }
-  .grid-item:has(img) span {
+  .grid-item:has(img) span, .grid-item:has(img) table {
     font-style: italic;
   }
 }
@@ -9904,6 +9934,19 @@ footer {
   }
 }
 /*lecturer end*/
+/*admission*/
+@media screen and (max-width: 479px) {
+  .table-small-font-mobile {
+    font-size: 14px;
+  }
+  .table-small-font-mobile span, .table-small-font-mobile table {
+    font-size: 14px;
+  }
+  .table-small-font-mobile td {
+    padding: 20px 5px;
+  }
+}
+/*admission end*/
 /*video player*/
 .video-js, .vjs-big-play-button, .vjs-big-play-button .vjs-icon-placeholder:before {
   content: "";

@@ -32,7 +32,7 @@ export const navigationListItems =
             link: "admission.html",
             dropdown: [
                 {name:"Про спеціальність", link: "speciality.html"},
-                {name: "На 1 курс(за ЗНО)", link: "#"},
+                {name: "На 1 курс(за ЗНО)", link: "admission-zno.html"},
                 {name: "Молодший спеціаліст", link: "#"},
                 {name: "Магістратура", link: "#"},
                 {name: "Аспірантура", link: "#"},
