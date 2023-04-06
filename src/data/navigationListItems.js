@@ -36,8 +36,8 @@ export const navigationListItems =
                 {name: "Молодший спеціаліст", link: "admission-junior-specialist.html"},
                 {name: "Магістратура", link: "admission-master.html"},
                 {name: "Аспірантура", link: "admission-postgraduate.html"},
-                {name: "Заочна форма навчання", link: "#"},
-                {name: "Підготовчі курси", link: "#"}
+                {name: "Заочна форма навчання", link: "admission-external.html"},
+                {name: "Підготовчі курси", link: "admission-preparatory-courses.html"}
             ]
         },
         {

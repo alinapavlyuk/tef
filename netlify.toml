@@ -89,6 +89,16 @@ to = "/html/admission-postgraduate.html"
 status = 200
 
 [[redirects]]
+from = "/admission-external.html"
+to = "/html/admission-external.html"
+status = 200
+
+[[redirects]]
+from = "/admission-preparatory-courses.html"
+to = "/html/admission-preparatory-courses.html"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
