@@ -109,8 +109,13 @@ to = "/html/bachelor.html"
 status = 200
 
 [[redirects]]
-from = "/bachelor-practice.html"
-to = "/html/bachelor-practice.html"
+from = "/bachelor_practice.html"
+to = "/html/bachelor_practice.html"
+status = 200
+
+[[redirects]]
+from = "/bachelor_diploma_design.html"
+to = "/html/bachelor_diploma_design.html"
 status = 200
 
 [[redirects]]
