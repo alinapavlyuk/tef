@@ -44,7 +44,7 @@ export const navigationListItems =
             name: "Студенту",
             link: "student.html",
             dropdown: [
-                {name: "Бакалавр", link: "#"},
+                {name: "Бакалавр", link: "bachelor.html"},
                 {name: "Магістр", link: "#"},
                 {name: "Доктор філософії", link: "#"},
                 {name: "Працевлаштування", link: "#"},
