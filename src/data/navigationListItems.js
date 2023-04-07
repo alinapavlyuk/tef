@@ -42,7 +42,7 @@ export const navigationListItems =
         },
         {
             name: "Студенту",
-            link: "#",
+            link: "student.html",
             dropdown: [
                 {name: "Бакалавр", link: "#"},
                 {name: "Магістр", link: "#"},

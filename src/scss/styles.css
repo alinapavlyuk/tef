@@ -9167,14 +9167,6 @@ footer {
     width: 100%;
   }
 }
-.main-mt, .mt-resp {
-  margin-top: 15vh;
-}
-
-.mb-resp {
-  margin-bottom: 15vh;
-}
-
 .gradient-text, .color-dot-list li::before {
   background: linear-gradient(96.45deg, #CCEC06 3.29%, #69D826 29.91%, #2EAA1A 95.62%);
   -webkit-background-clip: text;
@@ -9250,6 +9242,14 @@ footer {
     height: 15px;
   }
 }
+.main-mt, .mt-resp {
+  margin-top: 15vh;
+}
+
+.mb-resp {
+  margin-bottom: 15vh;
+}
+
 @media screen and (max-width: 480px), (orientation: portrait) {
   .main-mt {
     margin-top: 1.5vh;
@@ -9796,7 +9796,7 @@ footer {
   border: none;
   height: 3px;
   opacity: 1;
-  margin-top: 7vw;
+  margin-top: 7vh;
   background: linear-gradient(90deg, #CCEC06, #2EAA1A);
 }
 
