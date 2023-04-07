@@ -109,6 +109,11 @@ to = "/html/bachelor.html"
 status = 200
 
 [[redirects]]
+from = "/bachelor-practice.html"
+to = "/html/bachelor-practice.html"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
