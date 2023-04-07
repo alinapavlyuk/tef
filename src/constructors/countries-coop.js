@@ -2,7 +2,7 @@ import {countriesCoop} from "../data/countries_coop_data.js";
 
 function showCountriesCoop() {
     let countriesCoopSection = document.querySelector("#countries-coop");
-    countriesCoop.forEach((country,index) => {
+    countriesCoop.forEach((country, index) => {
         countriesCoopSection.innerHTML += `
             <div class="col-6">
                 <div class="row mb-3">

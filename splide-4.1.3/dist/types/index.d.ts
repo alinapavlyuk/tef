@@ -6,6 +6,7 @@
 interface MediaComponent extends BaseComponent {
     /** @internal */
     reduce(reduced: boolean): void;
+
     set(options: Options, base?: boolean, notify?: boolean): void;
 }
 
@@ -16,6 +17,7 @@ interface MediaComponent extends BaseComponent {
  */
 interface DirectionComponent extends BaseComponent {
     resolve(prop: string, axisOnly?: boolean, direction?: Options['direction']): string;
+
     orient(value: number): number;
 }
 
@@ -36,6 +38,7 @@ interface ElementCollection {
     bar?: HTMLElement;
     toggle?: HTMLElement;
 }
+
 /**
  * The interface for the Elements component.
  *
@@ -55,8 +58,11 @@ interface SlideComponent extends BaseComponent {
     slide: HTMLElement;
     container: HTMLElement;
     isClone: boolean;
+
     update(): void;
+
     style(prop: string, value: string | number, useContainer?: boolean): void;
+
     isWithin(from: number, distance: number): boolean;
 }
 
@@ -67,11 +73,17 @@ interface SlideComponent extends BaseComponent {
  */
 interface LayoutComponent extends BaseComponent {
     listSize(): number;
+
     slideSize(index: number, withoutGap?: boolean): number;
+
     sliderSize(withoutGap?: boolean): number;
+
     totalSize(index?: number, withoutGap?: boolean): number;
+
     getPadding(right: boolean): number;
+
     isOverflow(): boolean;
+
     /** @internal */
     resize(force?: boolean): void;
 }
@@ -91,15 +103,25 @@ interface ClonesComponent extends BaseComponent {
  */
 interface MoveComponent extends BaseComponent {
     move(dest: number, index: number, prev: number, callback?: AnyFunction): void;
+
     jump(index: number): void;
+
     translate(position: number, preventLoop?: boolean): void;
+
     shift(position: number, backwards: boolean): number;
+
     cancel(): void;
+
     toIndex(position: number): number;
+
     toPosition(index: number, trimming?: boolean): number;
+
     getPosition(): number;
+
     getLimit(max: boolean): number;
+
     exceededLimit(max?: boolean | undefined, position?: number): boolean;
+
     /** @internal */
     reposition(): void;
 }
@@ -111,17 +133,29 @@ interface MoveComponent extends BaseComponent {
  */
 interface ControllerComponent extends BaseComponent {
     go(control: number | string, allowSameIndex?: boolean, callback?: AnyFunction): void;
+
     scroll(destination: number, duration?: number, snap?: boolean, callback?: AnyFunction): void;
+
     getNext(destination?: boolean): number;
+
     getPrev(destination?: boolean): number;
+
     getEnd(): number;
+
     setIndex(index: number): void;
+
     getIndex(prev?: boolean): number;
+
     toIndex(page: number): number;
+
     toPage(index: number): number;
+
     toDest(position: number): number;
+
     hasFocus(): boolean;
+
     isBusy(): boolean;
+
     /** @internal */
     getAdjacent(prev: boolean, destination?: boolean): number;
 }
@@ -136,6 +170,7 @@ interface ArrowsComponent extends BaseComponent {
         prev?: HTMLButtonElement;
         next?: HTMLButtonElement;
     };
+
     /** @internal */
     update(): void;
 }
@@ -147,7 +182,9 @@ interface ArrowsComponent extends BaseComponent {
  */
 interface AutoplayComponent extends BaseComponent {
     play(): void;
+
     pause(): void;
+
     isPaused(): boolean;
 }
 
@@ -166,6 +203,7 @@ interface CoverComponent extends BaseComponent {
  */
 interface ScrollComponent extends BaseComponent {
     scroll(position: number, duration?: number, snap?: boolean, callback?: AnyFunction): void;
+
     cancel(): void;
 }
 
@@ -176,6 +214,7 @@ interface ScrollComponent extends BaseComponent {
  */
 interface DragComponent extends BaseComponent {
     disable(disabled: boolean): void;
+
     isDragging(): boolean;
 }
 
@@ -205,9 +244,12 @@ interface LazyLoadComponent extends BaseComponent {
  */
 interface PaginationComponent extends BaseComponent {
     items: PaginationItem[];
+
     getAt(index: number): PaginationItem;
+
     update(): void;
 }
+
 /**
  * The interface for data of the pagination.
  *
@@ -217,6 +259,7 @@ interface PaginationData {
     list: HTMLUListElement;
     items: PaginationItem[];
 }
+
 /**
  * The interface for each pagination item.
  *
@@ -468,6 +511,7 @@ interface Options extends ResponsiveOptions {
      */
     i18n?: Record<keyof typeof I18N | string, string>;
 }
+
 /**
  * The interface for options that can correspond with breakpoints.
  *
@@ -478,6 +522,7 @@ interface ResponsiveOptions {
      * Accepts arbitrary properties for extensions, although it's not ideal typing.
      */
     [key: string]: any;
+
     /**
      * The label for the root element.
      * Use `labelledby` instead if there is a visible label.
@@ -651,6 +696,7 @@ declare type AnyFunction = (...args: any[]) => any;
  * @since 3.0.0
  */
 declare type ComponentConstructor = (Splide: Splide, Components: Components, options: Options) => BaseComponent;
+
 /**
  * The interface for any component.
  *
@@ -658,9 +704,12 @@ declare type ComponentConstructor = (Splide: Splide, Components: Components, opt
  */
 interface BaseComponent {
     setup?(): void;
+
     mount?(): void;
+
     destroy?(completely?: boolean): void;
 }
+
 /**
  * The interface for the Transition component.
  *
@@ -668,8 +717,10 @@ interface BaseComponent {
  */
 interface TransitionComponent extends BaseComponent {
     start(index: number, done: () => void): void;
+
     cancel(): void;
 }
+
 /**
  * The interface for info of a splide instance to sync with.
  *
@@ -687,6 +738,7 @@ interface SyncTarget {
  */
 interface Components {
     [key: string]: BaseComponent | undefined;
+
     Media: MediaComponent;
     Direction: DirectionComponent;
     Elements: ElementsComponent;
@@ -793,18 +845,30 @@ declare type ShiftN<T extends any[], N extends number, C extends any[] = []> = {
  */
 interface SlidesComponent extends BaseComponent {
     update(): void;
+
     register(slide: HTMLElement, index: number, slideIndex: number): void;
+
     get(excludeClones?: boolean): SlideComponent[];
+
     getIn(page: number): SlideComponent[];
+
     getAt(index: number): SlideComponent | undefined;
+
     add(slide: string | Element | Array<string | Element>, index?: number): void;
+
     remove(selector: SlideMatcher): void;
+
     forEach(iteratee: SlidesIteratee, excludeClones?: boolean): void;
+
     filter(matcher: SlideMatcher): SlideComponent[];
+
     style(prop: string, value: string | number, useContainer?: boolean): void;
+
     getLength(excludeClones?: boolean): number;
+
     isEnough(): boolean;
 }
+
 /**
  * The iteratee function for Slides.
  *
@@ -830,6 +894,7 @@ declare type SlideMatcher = number | number[] | string | SlidesPredicate;
  * @since 4.0.0
  */
 declare type EventTargets = EventTarget | EventTarget[];
+
 /**
  * The interface for the EventBinder object.
  *
@@ -837,10 +902,14 @@ declare type EventTargets = EventTarget | EventTarget[];
  */
 interface EventBinderObject {
     bind(target: EventTargets, events: string | string[], callback: AnyFunction, options?: AddEventListenerOptions): void;
+
     unbind(target: EventTarget | EventTarget[], events: string | string[], callback?: AnyFunction): void;
+
     dispatch<T>(target: EventTarget, event: string, detail?: T): void;
+
     destroy(): void;
 }
+
 /**
  * The constructor function to provide methods to subscribe native events.
  *
@@ -858,13 +927,19 @@ declare function EventBinder(): EventBinderObject;
  */
 interface EventInterfaceObject extends EventBinderObject {
     on<K extends keyof EventMap>(event: K, callback: EventMap[K]): void;
+
     on(events: string | string[], callback: AnyFunction): void;
+
     off<K extends keyof EventMap>(events: K | K[] | string | string[]): void;
+
     emit<K extends keyof EventMap>(event: K, ...args: Parameters<EventMap[K]>): void;
+
     emit(event: string, ...args: any[]): void;
+
     /** @internal */
     bus: DocumentFragment;
 }
+
 /**
  * The constructor function that provides interface for internal and native events.
  *
@@ -884,12 +959,18 @@ declare function EventInterface(Splide?: Splide): EventInterfaceObject;
  */
 interface RequestIntervalInterface {
     start(resume?: boolean): void;
+
     pause(): void;
+
     rewind(): void;
+
     cancel(): void;
+
     set(interval: number): void;
+
     isPaused(): boolean;
 }
+
 /**
  * Requests interval like the native `setInterval()` with using `requestAnimationFrame`.
  *
@@ -909,8 +990,10 @@ declare function RequestInterval(interval: number, onInterval: () => void, onUpd
  */
 interface StateObject {
     set(state: number): void;
+
     is(states: number | number[]): boolean;
 }
+
 /**
  * The function providing a super simple state system.
  *
@@ -926,6 +1009,7 @@ declare function State(initialState: number): StateObject;
 interface ThrottleInstance<F extends AnyFunction> extends Function {
     (...args: Parameters<F>): void;
 }
+
 /**
  * Returns the throttled function.
  *
@@ -994,6 +1078,7 @@ declare class Splide {
      * The Transition component.
      */
     private _T;
+
     /**
      * The Splide constructor.
      *
@@ -1001,6 +1086,7 @@ declare class Splide {
      * @param options - Optional. An object with options.
      */
     constructor(target: string | HTMLElement, options?: Options);
+
     /**
      * Initializes the instance.
      *
@@ -1010,6 +1096,7 @@ declare class Splide {
      * @return `this`
      */
     mount(Extensions?: Record<string, ComponentConstructor>, Transition?: ComponentConstructor): this;
+
     /**
      * Syncs the slider with the provided one.
      * This method must be called before the `mount()`.
@@ -1029,6 +1116,7 @@ declare class Splide {
      * @return `this`
      */
     sync(splide: Splide): this;
+
     /**
      * Moves the slider with the following control pattern.
      *
@@ -1066,6 +1154,7 @@ declare class Splide {
      * @return `this`
      */
     go(control: number | string): this;
+
     /**
      * Registers an event handler.
      *
@@ -1090,6 +1179,7 @@ declare class Splide {
      */
     on<K extends keyof EventMap>(events: K, callback: EventMap[K]): this;
     on(events: string | string[], callback: AnyFunction): this;
+
     /**
      * Removes the registered all handlers for the specified event or events.
      * If you want to only remove a particular handler, use namespace to identify it.
@@ -1110,6 +1200,7 @@ declare class Splide {
      * @return `this`
      */
     off<K extends keyof EventMap>(events: K | K[] | string | string[]): this;
+
     /**
      * Emits an event and triggers registered handlers.
      *
@@ -1120,6 +1211,7 @@ declare class Splide {
      */
     emit<K extends keyof EventMap>(event: K, ...args: Parameters<EventMap[K]>): this;
     emit(event: string, ...args: any[]): this;
+
     /**
      * Inserts a slide at the specified position.
      *
@@ -1141,6 +1233,7 @@ declare class Splide {
      * @return `this`
      */
     add(slides: string | HTMLElement | Array<string | HTMLElement>, index?: number): this;
+
     /**
      * Removes slides that match the matcher
      * that can be an index, an array with indices, a selector, or an iteratee function.
@@ -1148,6 +1241,7 @@ declare class Splide {
      * @param matcher - An index, an array with indices, a selector string, or an iteratee function.
      */
     remove(matcher: SlideMatcher): this;
+
     /**
      * Checks the slider type.
      *
@@ -1156,12 +1250,14 @@ declare class Splide {
      * @return `true` if the type matches the current one, or otherwise `false`.
      */
     is(type: string): boolean;
+
     /**
      * Refreshes the slider.
      *
      * @return `this`
      */
     refresh(): this;
+
     /**
      * Destroys the slider.
      *
@@ -1170,6 +1266,7 @@ declare class Splide {
      * @return `this`
      */
     destroy(completely?: boolean): this;
+
     /**
      * Returns options.
      *
@@ -1182,12 +1279,14 @@ declare class Splide {
      * @param options - An object with new options.
      */
     set options(options: Options);
+
     /**
      * Returns the number of slides without clones.
      *
      * @return The number of slides.
      */
     get length(): number;
+
     /**
      * Returns the active slide index.
      *
@@ -1215,6 +1314,7 @@ interface SlideContent {
      */
     attrs?: Record<string, string | number | boolean>;
 }
+
 /**
  * The interface for the config of the renderer.
  *
@@ -1279,6 +1379,7 @@ declare class SplideRenderer {
      * @param splide - A Splide instance.
      */
     static clean(splide: Splide): void;
+
     /**
      * Holds slide contents.
      */
@@ -1311,6 +1412,7 @@ declare class SplideRenderer {
      * An array with options for each breakpoint.
      */
     private readonly breakpoints;
+
     /**
      * The SplideRenderer constructor.
      *
@@ -1320,6 +1422,7 @@ declare class SplideRenderer {
      * @param defaults - Default options for the slider. Pass `Splide.defaults` if you are using it.
      */
     constructor(contents: string[] | SlideContent[], options?: Options, config?: RendererConfig, defaults?: Options);
+
     /**
      * Initializes the instance.
      */
@@ -1553,6 +1656,7 @@ declare class SplideRenderer {
      * @return The HTML for the prev or next arrow.
      */
     private renderArrow;
+
     /**
      * Returns the HTML of the slider.
      *
@@ -1688,4 +1792,123 @@ declare const LOOP = "loop";
  */
 declare const FADE = "fade";
 
-export { AnyFunction, ArrowsComponent, AutoplayComponent, BaseComponent, CLASSES, CLASS_ACTIVE, CLASS_ARROW, CLASS_ARROWS, CLASS_ARROW_NEXT, CLASS_ARROW_PREV, CLASS_CLONE, CLASS_CONTAINER, CLASS_FOCUS_IN, CLASS_INITIALIZED, CLASS_LIST, CLASS_LOADING, CLASS_NEXT, CLASS_OVERFLOW, CLASS_PAGINATION, CLASS_PAGINATION_PAGE, CLASS_PREV, CLASS_PROGRESS, CLASS_PROGRESS_BAR, CLASS_ROOT, CLASS_SLIDE, CLASS_SPINNER, CLASS_SR, CLASS_TOGGLE, CLASS_TOGGLE_PAUSE, CLASS_TOGGLE_PLAY, CLASS_TRACK, CLASS_VISIBLE, Cast, ClonesComponent, ComponentConstructor, Components, ControllerComponent, CoverComponent, DEFAULTS, DirectionComponent, DragComponent, EVENT_ACTIVE, EVENT_ARROWS_MOUNTED, EVENT_ARROWS_UPDATED, EVENT_AUTOPLAY_PAUSE, EVENT_AUTOPLAY_PLAY, EVENT_AUTOPLAY_PLAYING, EVENT_CLICK, EVENT_DESTROY, EVENT_DRAG, EVENT_DRAGGED, EVENT_DRAGGING, EVENT_END_INDEX_CHANGED, EVENT_HIDDEN, EVENT_INACTIVE, EVENT_LAZYLOAD_LOADED, EVENT_MOUNTED, EVENT_MOVE, EVENT_MOVED, EVENT_NAVIGATION_MOUNTED, EVENT_OVERFLOW, EVENT_PAGINATION_MOUNTED, EVENT_PAGINATION_UPDATED, EVENT_READY, EVENT_REFRESH, EVENT_RESIZE, EVENT_RESIZED, EVENT_SCROLL, EVENT_SCROLLED, EVENT_SHIFTED, EVENT_SLIDE_KEYDOWN, EVENT_UPDATED, EVENT_VISIBLE, ElementsComponent, EventBinder, EventBinderObject, EventInterface, EventInterfaceObject, EventMap, FADE, Head, KeyboardComponent, LOOP, LTR, LayoutComponent, LazyLoadComponent, LiveComponent, MediaComponent, MoveComponent, Options, PaginationComponent, PaginationData, PaginationItem, Push, RTL, RequestInterval, RequestIntervalInterface, Resolve, ResponsiveOptions, SLIDE, STATUS_CLASSES, ScrollComponent, Shift, ShiftN, SlideComponent, SlidesComponent, Splide, SplideRenderer, State, StateObject, SyncComponent, SyncTarget, TTB, Throttle, ThrottleInstance, TransitionComponent, WheelComponent, Splide as default };
+export {
+    AnyFunction,
+    ArrowsComponent,
+    AutoplayComponent,
+    BaseComponent,
+    CLASSES,
+    CLASS_ACTIVE,
+    CLASS_ARROW,
+    CLASS_ARROWS,
+    CLASS_ARROW_NEXT,
+    CLASS_ARROW_PREV,
+    CLASS_CLONE,
+    CLASS_CONTAINER,
+    CLASS_FOCUS_IN,
+    CLASS_INITIALIZED,
+    CLASS_LIST,
+    CLASS_LOADING,
+    CLASS_NEXT,
+    CLASS_OVERFLOW,
+    CLASS_PAGINATION,
+    CLASS_PAGINATION_PAGE,
+    CLASS_PREV,
+    CLASS_PROGRESS,
+    CLASS_PROGRESS_BAR,
+    CLASS_ROOT,
+    CLASS_SLIDE,
+    CLASS_SPINNER,
+    CLASS_SR,
+    CLASS_TOGGLE,
+    CLASS_TOGGLE_PAUSE,
+    CLASS_TOGGLE_PLAY,
+    CLASS_TRACK,
+    CLASS_VISIBLE,
+    Cast,
+    ClonesComponent,
+    ComponentConstructor,
+    Components,
+    ControllerComponent,
+    CoverComponent,
+    DEFAULTS,
+    DirectionComponent,
+    DragComponent,
+    EVENT_ACTIVE,
+    EVENT_ARROWS_MOUNTED,
+    EVENT_ARROWS_UPDATED,
+    EVENT_AUTOPLAY_PAUSE,
+    EVENT_AUTOPLAY_PLAY,
+    EVENT_AUTOPLAY_PLAYING,
+    EVENT_CLICK,
+    EVENT_DESTROY,
+    EVENT_DRAG,
+    EVENT_DRAGGED,
+    EVENT_DRAGGING,
+    EVENT_END_INDEX_CHANGED,
+    EVENT_HIDDEN,
+    EVENT_INACTIVE,
+    EVENT_LAZYLOAD_LOADED,
+    EVENT_MOUNTED,
+    EVENT_MOVE,
+    EVENT_MOVED,
+    EVENT_NAVIGATION_MOUNTED,
+    EVENT_OVERFLOW,
+    EVENT_PAGINATION_MOUNTED,
+    EVENT_PAGINATION_UPDATED,
+    EVENT_READY,
+    EVENT_REFRESH,
+    EVENT_RESIZE,
+    EVENT_RESIZED,
+    EVENT_SCROLL,
+    EVENT_SCROLLED,
+    EVENT_SHIFTED,
+    EVENT_SLIDE_KEYDOWN,
+    EVENT_UPDATED,
+    EVENT_VISIBLE,
+    ElementsComponent,
+    EventBinder,
+    EventBinderObject,
+    EventInterface,
+    EventInterfaceObject,
+    EventMap,
+    FADE,
+    Head,
+    KeyboardComponent,
+    LOOP,
+    LTR,
+    LayoutComponent,
+    LazyLoadComponent,
+    LiveComponent,
+    MediaComponent,
+    MoveComponent,
+    Options,
+    PaginationComponent,
+    PaginationData,
+    PaginationItem,
+    Push,
+    RTL,
+    RequestInterval,
+    RequestIntervalInterface,
+    Resolve,
+    ResponsiveOptions,
+    SLIDE,
+    STATUS_CLASSES,
+    ScrollComponent,
+    Shift,
+    ShiftN,
+    SlideComponent,
+    SlidesComponent,
+    Splide,
+    SplideRenderer,
+    State,
+    StateObject,
+    SyncComponent,
+    SyncTarget,
+    TTB,
+    Throttle,
+    ThrottleInstance,
+    TransitionComponent,
+    WheelComponent,
+    Splide as default
+};

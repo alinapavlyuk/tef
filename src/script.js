@@ -9,7 +9,7 @@ function showMainNavigationBar() {
            <div class="space-before-dropdown"></div>
         </li>
         `
-        if(item.dropdown.length !== 0) {
+        if (item.dropdown.length !== 0) {
             let navigationListItem = document.querySelector(`#main-nav-item-${index}`);
             navigationListItem.classList.add("dropdown");
             navigationListItem.innerHTML += `
@@ -35,20 +35,20 @@ function showSideNavigationBar() {
            <a href="#" class="nav-link" id="side-link-${index}">${item.name}</a>
         </li>
         `
-        if(item.dropdown.length !== 0) {
+        if (item.dropdown.length !== 0) {
             let navigationLink = document.querySelector(`#side-link-${index}`);
-                navigationLink.classList.add("dropdown-toggle");
-                navigationLink.setAttribute("data-bs-toggle", "dropdown")
+            navigationLink.classList.add("dropdown-toggle");
+            navigationLink.setAttribute("data-bs-toggle", "dropdown")
             let navigationListItem = document.querySelector(`#side-nav-item-${index}`);
-                navigationListItem.classList.add("dropdown");
-                navigationListItem.innerHTML += `
+            navigationListItem.classList.add("dropdown");
+            navigationListItem.innerHTML += `
                     <ul class="dropdown-menu" id="side-dropdown-${index}"></ul>
                 `
             let dropdownMenu = document.querySelector(`#side-dropdown-${index}`);
-                dropdownMenu.innerHTML += `
+            dropdownMenu.innerHTML += `
                     <li><a class="dropdown-item" href="${setLinksNavigation(item.link)}">${item.name}</a></li>
                 `
-                item.dropdown.forEach(function (dropdownItem) {
+            item.dropdown.forEach(function (dropdownItem) {
                 dropdownMenu.innerHTML += `
                     <li><a class="dropdown-item" href="${setLinksNavigation(dropdownItem.link)}">${dropdownItem.name}</a></li>
                 `

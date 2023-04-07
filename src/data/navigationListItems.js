@@ -3,7 +3,7 @@ let page = path.split("/").pop();
 let isMain = page === 'index.html';
 
 export function setLinksNavigation(link) {
-    if(isMain) {
+    if (isMain) {
         return `html/${link}`;
     } else {
         return link;
@@ -20,10 +20,10 @@ export const navigationListItems =
                 {name: "Положення", link: "state.html"},
                 {name: "Матеріали акредитації", link: "accreditation.html"},
                 {name: "Викладачі", link: "lecturers.html"},
-                {name: "Партнери",link: "partners.html"},
+                {name: "Партнери", link: "partners.html"},
                 {name: "Міжнародна співпраця", link: "international_coop.html"},
                 {name: "Випускники", link: "alumni.html"},
-                {name: "Документообіг",link: "document_circulation.html"},
+                {name: "Документообіг", link: "document_circulation.html"},
                 {name: "Дистанційні засоби навчання", link: "offline_studying.html"}
             ]
         },
@@ -31,7 +31,7 @@ export const navigationListItems =
             name: "Вступ",
             link: "admission.html",
             dropdown: [
-                {name:"Про спеціальність", link: "speciality.html"},
+                {name: "Про спеціальність", link: "speciality.html"},
                 {name: "На 1 курс(за ЗНО)", link: "admission-zno.html"},
                 {name: "Молодший спеціаліст", link: "admission-junior-specialist.html"},
                 {name: "Магістратура", link: "admission-master.html"},
@@ -50,7 +50,7 @@ export const navigationListItems =
                 {name: "Працевлаштування", link: "#"},
                 {name: "Дистанційні ресурси для наукової роботи", link: "#"},
                 {name: "Студрада", link: "#"},
-                {name: "Гуртожитки",link: "#"},
+                {name: "Гуртожитки", link: "#"},
                 {name: "Дозвілля", link: "#"}
             ]
         },

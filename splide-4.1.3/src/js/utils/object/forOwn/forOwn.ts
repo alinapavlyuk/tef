@@ -1,4 +1,4 @@
-import { ownKeys } from '../ownKeys/ownKeys';
+import {ownKeys} from '../ownKeys/ownKeys';
 
 
 /**
@@ -11,15 +11,15 @@ import { ownKeys } from '../ownKeys/ownKeys';
  * @return A provided object itself.
  */
 export function forOwn<T extends object>(
-  object: T,
-  iteratee: ( value: T[ keyof T ], key: string ) => boolean | void,
-  right?: boolean
+    object: T,
+    iteratee: (value: T[ keyof T ], key: string) => boolean | void,
+    right?: boolean
 ): T {
-  if ( object ) {
-    ( right ? ownKeys( object ).reverse() : ownKeys( object ) ).forEach( key => {
-      key !== '__proto__' && iteratee( object[ key ], key );
-    } );
-  }
+    if (object) {
+        (right ? ownKeys(object).reverse() : ownKeys(object)).forEach(key => {
+            key !== '__proto__' && iteratee(object[key], key);
+        });
+    }
 
-  return object;
+    return object;
 }

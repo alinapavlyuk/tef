@@ -1,5 +1,5 @@
-import { forEach } from '../../array';
-import { ownKeys } from '../ownKeys/ownKeys';
+import {forEach} from '../../array';
+import {ownKeys} from '../ownKeys/ownKeys';
 
 
 /**
@@ -8,8 +8,8 @@ import { ownKeys } from '../ownKeys/ownKeys';
  * @param object - An object.
  * @param keys   - A key or keys to delete. If not specified, all own enumerable keys will be deleted.
  */
-export function omit( object: object, keys?: string | string[] ): void {
-  forEach( keys || ownKeys( object ), key => {
-    delete object[ key ];
-  } );
+export function omit(object: object, keys?: string | string[]): void {
+    forEach(keys || ownKeys(object), key => {
+        delete object[key];
+    });
 }

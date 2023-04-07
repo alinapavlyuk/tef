@@ -1,4 +1,5 @@
 import {partners} from "../data/partners_data.js";
+
 function showPartners() {
     let partnersSection = document.querySelector("#partners");
     partners.forEach((partner) => {
