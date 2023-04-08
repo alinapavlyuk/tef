@@ -1067,6 +1067,18 @@ footer {
 
 /*admission end*/
 
+/*postgraduate*/
+@media screen and (max-width: 991px) {
+  .postgraduate-table {
+    td {
+      font-size: 14px;
+      padding: 10px 10px;
+    }
+  }
+}
+
+/*postgraduate end*/
+
 /*video player*/
 .video-js, .vjs-big-play-button, .vjs-big-play-button .vjs-icon-placeholder:before {
   content: "";
