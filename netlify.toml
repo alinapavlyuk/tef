@@ -144,6 +144,11 @@ to = "/html/leisure.html"
 status = 200
 
 [[redirects]]
+from = "/dormitory.html"
+to = "/html/dormitory.html"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200

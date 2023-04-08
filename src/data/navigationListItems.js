@@ -50,7 +50,7 @@ export const navigationListItems =
                 {name: "Працевлаштування", link: "#"},
                 {name: "Дистанційні ресурси для наукової роботи", link: "online_studying_resources.html"},
                 {name: "Студрада", link: "student_council.html"},
-                {name: "Гуртожитки", link: "#"},
+                {name: "Гуртожитки", link: "dormitory.html"},
                 {name: "Дозвілля", link: "leisure.html"}
             ]
         },
