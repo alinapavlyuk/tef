@@ -24,7 +24,7 @@ export const navigationListItems =
                 {name: "Міжнародна співпраця", link: "international_coop.html"},
                 {name: "Випускники", link: "alumni.html"},
                 {name: "Документообіг", link: "document_circulation.html"},
-                {name: "Дистанційні засоби навчання", link: "offline_studying.html"}
+                {name: "Дистанційні засоби навчання", link: "online_studying.html"}
             ]
         },
         {
@@ -48,7 +48,7 @@ export const navigationListItems =
                 {name: "Магістр", link: "master.html"},
                 {name: "Доктор філософії", link: "postgraduate.html"},
                 {name: "Працевлаштування", link: "#"},
-                {name: "Дистанційні ресурси для наукової роботи", link: "#"},
+                {name: "Дистанційні ресурси для наукової роботи", link: "online_studying_resources.html"},
                 {name: "Студрада", link: "#"},
                 {name: "Гуртожитки", link: "#"},
                 {name: "Дозвілля", link: "#"}

@@ -54,8 +54,8 @@ to = "/html/document_circulation.html"
 status = 200
 
 [[redirects]]
-from = "/offline_studying.html"
-to = "/html/offline_studying.html"
+from = "/online_studying.html"
+to = "/html/online_studying.html"
 status = 200
 
 [[redirects]]
@@ -127,6 +127,12 @@ status = 200
 from = "/postgraduate.html"
 to = "/html/postgraduate.html"
 status = 200
+
+[[redirects]]
+from = "/online_studying_sources.html"
+to = "/html/online_studying_sources.html"
+status = 200
+
 
 [[redirects]]
 from = "/*"
