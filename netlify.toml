@@ -133,6 +133,11 @@ from = "/online_studying_sources.html"
 to = "/html/online_studying_sources.html"
 status = 200
 
+[[redirects]]
+from = "/student_council.html"
+to = "/html/student_council.html"
+status = 200
+
 
 [[redirects]]
 from = "/*"
