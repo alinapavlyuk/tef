@@ -58,7 +58,7 @@ export const navigationListItems =
             name: "Наука",
             link: "science.html",
             dropdown: [
-                {name: "Наукова робота зі студентами", link: "#"},
+                {name: "Наукова робота зі студентами", link: "science_schools.html"},
                 {name: "Напрямки досліджень", link: "#"},
                 {name: "Наукові школи", link: "#"},
                 {name: "Наукові заходи", link: "#"}]
