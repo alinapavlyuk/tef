@@ -32,7 +32,7 @@ function showSideNavigationBar() {
     navigationListItems.forEach(function (item, index) {
         navigationList.innerHTML += `
         <li class="nav-item" id="side-nav-item-${index}">
-           <a href="#" class="nav-link" id="side-link-${index}">${item.name}</a>
+           <a href="${setLinksNavigation(item.link)}" class="nav-link" id="side-link-${index}">${item.name}</a>
         </li>
         `
         if (item.dropdown.length !== 0) {
