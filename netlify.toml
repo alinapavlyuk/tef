@@ -159,6 +159,11 @@ to = "/html/science_schools.html"
 status = 200
 
 [[redirects]]
+from = "/contacts.html"
+to = "/html/contacts.html"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200

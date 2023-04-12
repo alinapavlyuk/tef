@@ -9909,15 +9909,15 @@ footer {
 }
 /*about end*/
 /*history*/
-.grid-item:has(img) img:not(.vertical-picture) {
+.history .grid-item:has(img) img:not(.vertical-picture) {
   width: 100%;
 }
 
 @media screen and (max-width: 479px) {
-  .grid-item {
+  .history .grid-item {
     position: unset !important;
   }
-  .grid-item:has(img) span, .grid-item:has(img) table {
+  .history .grid-item:has(img) span, .history .grid-item:has(img) table {
     font-style: italic;
   }
 }
@@ -9959,6 +9959,12 @@ footer {
   }
 }
 /*postgraduate end*/
+/*contacts*/
+.contacts img {
+  width: 18px;
+}
+
+/*contacts end*/
 /*video player*/
 .video-js, .vjs-big-play-button, .vjs-big-play-button .vjs-icon-placeholder:before {
   content: "";
@@ -9973,7 +9979,7 @@ footer {
 
 /*video player end*/
 /*footer*/
-.contacts img {
+.contacts-footer img {
   width: 15px;
 }
 
@@ -9989,6 +9995,14 @@ footer {
   width: 35px;
 }
 
+@media (max-width: 991px) {
+  .facebook-link img {
+    width: 25px;
+  }
+  .telegram-link img {
+    width: 30px;
+  }
+}
 .footer-links a {
   text-decoration: underline;
   transition: 0.5s all ease-out;
