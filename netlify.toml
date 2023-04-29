@@ -164,6 +164,16 @@ to = "/html/contacts.html"
 status = 200
 
 [[redirects]]
+from = "/news_main.html"
+to = "/html/news_main.html"
+status = 200
+
+[[redirects]]
+from = "/news_article.html"
+to = "/html/news_article.html"
+status = 200
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200

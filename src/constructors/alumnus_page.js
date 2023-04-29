@@ -23,5 +23,4 @@ function showAlumnusInfoByID() {
 
 }
 
-console.log(alumnusInfo);
 showAlumnusInfoByID();

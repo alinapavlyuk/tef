@@ -32,12 +32,12 @@ export const navigationListItems =
             link: "admission.html",
             dropdown: [
                 {name: "Про спеціальність", link: "speciality.html"},
-                {name: "На 1 курс(за ЗНО)", link: "admission-zno.html"},
-                {name: "Молодший спеціаліст", link: "admission-junior-specialist.html"},
-                {name: "Магістратура", link: "admission-master.html"},
-                {name: "Аспірантура", link: "admission-postgraduate.html"},
-                {name: "Заочна форма навчання", link: "admission-external.html"},
-                {name: "Підготовчі курси", link: "admission-preparatory-courses.html"}
+                {name: "На 1 курс(за ЗНО)", link: "admission_zno.html"},
+                {name: "Молодший спеціаліст", link: "admission_junior_specialist.html"},
+                {name: "Магістратура", link: "admission_master.html"},
+                {name: "Аспірантура", link: "admission_postgraduate.html"},
+                {name: "Заочна форма навчання", link: "admission_external.html"},
+                {name: "Підготовчі курси", link: "admission_preparatory_courses.html"}
             ]
         },
         {
@@ -65,7 +65,7 @@ export const navigationListItems =
         },
         {
             name: "Новини",
-            link: "#",
+            link: "news_main.html",
             dropdown: []
         },
         {
