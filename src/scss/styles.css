@@ -9513,6 +9513,10 @@ footer {
   transition: flex 1.5s ease-in-out;
 }
 
+.photo-accordion-item:hover {
+  cursor: pointer;
+}
+
 .accordion-item-active {
   flex: 15;
 }
