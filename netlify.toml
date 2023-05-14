@@ -69,33 +69,33 @@ to = "/html/speciality.html"
 status = 200
 
 [[redirects]]
-from = "/admission-zno.html"
-to = "/html/admission-zno.html"
+from = "/admission_zno.html"
+to = "/html/admission_zno.html"
 status = 200
 
 [[redirects]]
-from = "/admission-junior-specialist.html"
-to = "/html/admission-junior-specialist.html"
+from = "/admission_junior_specialist.html"
+to = "/html/admission_junior_specialist.html"
 status = 200
 
 [[redirects]]
-from = "/admission-master.html"
-to = "/html/admission-master.html"
+from = "/admission_master.html"
+to = "/html/admission_master.html"
 status = 200
 
 [[redirects]]
-from = "/admission-postgraduate.html"
-to = "/html/admission-postgraduate.html"
+from = "/admission_postgraduate.html"
+to = "/html/admission_postgraduate.html"
 status = 200
 
 [[redirects]]
-from = "/admission-external.html"
-to = "/html/admission-external.html"
+from = "/admission_external.html"
+to = "/html/admission_external.html"
 status = 200
 
 [[redirects]]
-from = "/admission-preparatory-courses.html"
-to = "/html/admission-preparatory-courses.html"
+from = "/admission_preparatory_courses.html"
+to = "/html/admission_preparatory_courses.html"
 status = 200
 
 [[redirects]]
