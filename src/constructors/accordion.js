@@ -27,7 +27,6 @@ function setNewSlide(n) {
 function handleClick() {
     document.querySelectorAll(".photo-accordion-item").forEach((item)=>{
         let number = item.id.charAt(item.id.length - 1);
-        console.log(number);
         item.addEventListener("click", () => {
             setNewSlide(number);
         });

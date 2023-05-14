@@ -32,6 +32,10 @@
   color: #ABB1AC;
 }
 
+body .container-fluid {
+  max-width: 1400px;
+}
+
 header {
   @include raleway-font-with-settings;
   font-size: $main-nav-font-size-main;
@@ -302,6 +306,7 @@ footer {
 
 .logo {
   width: $logo-size-main;
+  max-width: 75px;
 }
 
 @media screen and (max-width: 480px), (orientation: portrait) {
@@ -691,10 +696,10 @@ footer {
 
 @media screen and (max-width: 991px) {
   .box-menu-table {
-    min-height: 100px;
+    min-height: 140px;
   }
   .box-menu {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
@@ -735,6 +740,15 @@ footer {
   }
   .major-description {
     font-size: 1.4vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .major-name {
+    font-size: 25px;
+  }
+  .major-description {
+    font-size: 22px;
   }
 }
 
@@ -921,6 +935,7 @@ footer {
   img {
     opacity: 0.9;
     transition: 0.5s all ease-out;
+    aspect-ratio: 4/3;
   }
 
   div a {

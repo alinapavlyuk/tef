@@ -1,6 +1,6 @@
 import {newsContent} from "./news_content_data.js";
 
-const NEWS_ARTICLE_FILE_LINK = '../html/news_article.html?number=';
+const NEWS_ARTICLE_FILE_LINK = 'html/news_article.html?number=';
 export const getLink = (id) => `${NEWS_ARTICLE_FILE_LINK}${id}`;
 
 export const firstArticleData = {

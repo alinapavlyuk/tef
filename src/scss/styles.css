@@ -9026,6 +9026,10 @@ textarea.form-control-lg {
   color: #ABB1AC;
 }
 
+body .container-fluid, body .container-sm, body .container-md, body .container-lg, body .container-xl, body .container-xxl {
+  max-width: 1400px;
+}
+
 header {
   font-family: "Raleway", serif;
   font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on, "ss11" on, "ss10" on, "ss09" on, "ss06" on, "ss08" on, "ss07" on, "ordn" on;
@@ -9276,6 +9280,7 @@ footer {
 
 .logo {
   width: 10vh;
+  max-width: 75px;
 }
 
 @media screen and (max-width: 480px), (orientation: portrait) {
@@ -9627,10 +9632,10 @@ footer {
 
 @media screen and (max-width: 991px) {
   .box-menu-table {
-    min-height: 100px;
+    min-height: 140px;
   }
   .box-menu {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -9667,6 +9672,14 @@ footer {
   }
   .major-description {
     font-size: 1.4vw;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .major-name {
+    font-size: 25px;
+  }
+  .major-description {
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -9833,6 +9846,7 @@ footer {
 .splide__slide__container img {
   opacity: 0.9;
   transition: 0.5s all ease-out;
+  aspect-ratio: 4/3;
 }
 .splide__slide__container div a {
   font-family: "Raleway", serif;
