@@ -1,6 +1,13 @@
+let path = window.location.pathname;
+let page = path.split("/").pop();
+let isMain = page === 'index.html';
+
 let header = document.querySelector("header");
+let menu = document.querySelector(".menu");
 let footer = document.querySelector("footer");
-header.innerHTML += `<div class="container-fluid">
+
+function setMenu(place) {
+    place.innerHTML += `<div class="container-fluid">
             <div class="row main-nav mx-4">
                 <div class="col-3 p-0">
                     <a href="../index.html">
@@ -67,7 +74,10 @@ header.innerHTML += `<div class="container-fluid">
                 </nav>
             </div>
         </div>
-`;
+`
+}
+
+setMenu(isMain ? menu : header)
 
 footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
             <div class="col-12 col-sm-4">
