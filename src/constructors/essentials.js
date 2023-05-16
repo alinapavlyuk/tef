@@ -1,16 +1,17 @@
 let path = window.location.pathname;
 let page = path.split("/").pop();
-let isMain = page === 'index.html';
 
 let header = document.querySelector("header");
-let menu = document.querySelector(".menu");
+let mainHeader = document.querySelector("header .container-fluid");
 let footer = document.querySelector("footer");
 
-function setMenu(place) {
-    place.innerHTML += `<div class="container-fluid">
+let isMain = !!mainHeader;
+
+function setMenu(place, link) {
+    place.innerHTML = `<div class="container-fluid">
             <div class="row main-nav mx-4">
                 <div class="col-3 p-0">
-                    <a href="../index.html">
+                    <a href="${link}">
                         <img src="../../images/headerIcons/logo.svg" alt="logo" class="logo">
                     </a>
                 </div>
@@ -74,10 +75,11 @@ function setMenu(place) {
                 </nav>
             </div>
         </div>
-`
+` + place.innerHTML;
 }
 
-setMenu(isMain ? menu : header)
+setMenu(isMain ? mainHeader : header, isMain ? "index.html" : "../index.html")
+console.log(isMain)
 
 footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
             <div class="col-12 col-sm-4">

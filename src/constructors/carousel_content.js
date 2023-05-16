@@ -4,7 +4,6 @@ function fillCarousel(n) {
     let newsCarousel = newsData;
     newsCarousel.unshift(firstArticleData);
     newsCarousel = newsCarousel.slice(0, n);
-    console.log(newsCarousel);
     let carousel = document.querySelector("#carousel");
     newsCarousel.forEach((article) => {
             carousel.innerHTML += `<li class="splide__slide">
