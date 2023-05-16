@@ -79,7 +79,6 @@ function setMenu(place, link) {
 }
 
 setMenu(isMain ? mainHeader : header, isMain ? "index.html" : "../index.html")
-console.log(isMain)
 
 footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
             <div class="col-12 col-sm-4">
@@ -142,25 +141,25 @@ footer.innerHTML += `<div class="row flex-column flex-sm-row mb-4 mb-sm-5">
             </div>
             <div class="col-12 col-sm-6 footer-kpi-logos">
                 <div class="row mt-3 mt-sm-0 align-items-center">
-                    <div class="col-3">
-                        <img src="../../images/contactIcons/univercity-logo-big.svg" alt="">
+                    <div class="col-3 text-end">
+                        <img src="../../images/contactIcons/university-logo-big.svg" alt="">
                     </div>
                     <div class="col-9">
-                            <span>
-                                Навчально-науковий інститут атомної
-                                та теплової енергетики
-                            </span>
+                        <span>
+                            Навчально-науковий інститут атомної
+                            та теплової енергетики
+                        </span>
                     </div>
                 </div>
                 <div class="row mt-3 mt-sm-2 align-items-center">
-                    <div class="col-3">
-                        <img src="../../images/contactIcons/univercity-logo-big.svg" alt="">
+                    <div class="col-3 text-end">
+                        <img src="../../images/contactIcons/university-logo-big.svg" alt="">
                     </div>
                     <div class="col-9">
-                            <span>
-                                Національний технічний університет України
-                                "Київський політехнічний інститут імені Ігоря Сікорського"
-                            </span>
+                        <span>
+                            Національний технічний університет України
+                            "Київський політехнічний інститут імені Ігоря Сікорського"
+                        </span>
                     </div>
                 </div>
             </div>

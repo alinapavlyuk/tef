@@ -1,6 +1,6 @@
 let path = window.location.pathname;
 let page = path.split("/").pop();
-let isMain = page === 'index.html';
+let isMain = page === 'index.html' || page === '';
 
 export function setLinksNavigation(link) {
     if (isMain) {

@@ -9921,11 +9921,6 @@ header {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1501px) {
-  header {
-    font-size: 17px;
-  }
-}
 main {
   margin: 0 auto;
   flex: 1;
@@ -10032,7 +10027,7 @@ p, .color-dot-list li {
 }
 @media screen and (max-width: 480px), (orientation: portrait) {
   p, .color-dot-list li, span, table, footer a, .green-button {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -10194,6 +10189,11 @@ footer {
   max-width: 75px;
 }
 
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+  .logo {
+    width: 8vh;
+  }
+}
 @media screen and (max-width: 480px), (orientation: portrait) {
   .logo {
     width: 5vh;
@@ -10381,6 +10381,11 @@ footer {
   padding-top: 10vh;
 }
 
+@media screen and (min-width: 1400px) {
+  .faculty-heading {
+    max-width: 600px;
+  }
+}
 @media screen and (max-width: 991px) {
   h1, .h1 {
     text-align: left;
@@ -10543,11 +10548,12 @@ footer {
 
 @media screen and (max-width: 991px) {
   .box-menu-table {
-    min-height: 130px;
-    padding: 0 10px !important;
+    min-height: 120px;
+    line-height: 23px;
+    padding: 10px 10px !important;
   }
   .box-menu {
-    font-size: 22px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10577,7 +10583,15 @@ footer {
   display: contents;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1400px) {
+  .major-name {
+    font-size: 25px;
+  }
+  .major-description {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
   .major-name {
     margin: 0;
     font-size: 2.4vw;
@@ -10586,12 +10600,9 @@ footer {
     font-size: 1.4vw;
   }
 }
-@media screen and (min-width: 1400px) {
-  .major-name {
-    font-size: 25px;
-  }
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .major-description {
-    font-size: 20px;
+    font-size: 1.6vw;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -10635,10 +10646,20 @@ footer {
 
 .advantages-list-item p, .advantages-list-item .color-dot-list li, .color-dot-list .advantages-list-item li {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.4vw;
   padding: 0 30px 0 35px;
 }
 
+@media screen and (min-width: 1400px) {
+  .advantages-list-item p, .advantages-list-item .color-dot-list li, .color-dot-list .advantages-list-item li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .advantages-list-item p, .advantages-list-item .color-dot-list li, .color-dot-list .advantages-list-item li {
+    font-size: 14px;
+  }
+}
 .advantages-photo {
   gap: 5px;
 }
@@ -10782,9 +10803,16 @@ footer {
 }
 @media (min-width: 480px) {
   .splide__slide__container div a {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     line-height: 3vw;
     height: 9vw;
+  }
+}
+@media (min-width: 1450px) {
+  .splide__slide__container div a {
+    font-size: 22px;
+    line-height: 2vw;
+    height: 4vw;
   }
 }
 .splide__slide__container:hover img {
